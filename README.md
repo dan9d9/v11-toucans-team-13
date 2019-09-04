@@ -7,7 +7,7 @@ This project was created for Chingu Voyage 11. It is a clone of the [Chipotle](h
 
 **If you would like to run this webpage locally you can:**
 1. Fork and clone into your local repository
-2. Use command git clone <link> in Bash to copy all the files locally.
+2. Use command `git clone` in Bash to copy all the files locally.
 
 <br>
 <br>
