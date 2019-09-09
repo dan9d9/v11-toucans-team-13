@@ -39,6 +39,10 @@ header {
     color: #451400;
 }
 
+.navLink:hover {
+    color: #ad2118;
+}
+
 .headerButton {
     width: 200px;
     height: 40px;
@@ -46,6 +50,10 @@ header {
     border: none;
     border-radius: 20px;
     cursor: pointer;    
+}
+
+.headerButton:hover {
+    background: black;
 }
 
 .fi-xnsuxl-codeigniter {    /*Flame icon*/
