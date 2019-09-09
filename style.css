@@ -7,3 +7,38 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: "Nunito", "IBM Plex Sans", Arial, sans-serif;
+}
+
+/***NAVIGATION***/
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px;
+    padding: 0.5em 1.5em;
+}
+
+.navList {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+}
+
+.navList_item {
+    margin-right: 2em;
+}
+
+.navList_item:last-child {
+    margin-right: 0;
+}
+
+.navLink {
+    font-family: 'font73252', "IBM Plex Sans", Arial, sans-serif; /*font73468 = Trade Gothic LT*/
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #451400;
+}
