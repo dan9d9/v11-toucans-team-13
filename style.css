@@ -33,6 +33,7 @@ header {
 }
 
 .navLink {
+    position: relative;
     font-family: 'font73252', "IBM Plex Sans", Arial, sans-serif; /*font73468 = Trade Gothic LT*/
     font-size: 1.5rem;
     text-decoration: none;
@@ -41,6 +42,17 @@ header {
 
 .navLink:hover {
     color: #ad2118;
+    border-bottom: solid #ad2118;
+}
+
+.navLink::after {
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    content: "";
+    height: 3px;
+    width: 70%;
+    background: white;
 }
 
 .headerButton {
