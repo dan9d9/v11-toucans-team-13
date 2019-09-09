@@ -1,1 +1,82 @@
+html {
+    font-size: 100%;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", "IBM Plex Sans", Arial, sans-serif;
+}
+
+/***NAVIGATION***/
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px;
+    padding: 0.5em 1.5em;
+}
+
+.navList {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+}
+
+.navList_item:not(:last-child) {
+    margin-right: 2em;
+}
+
+.navLink {
+    position: relative;
+    font-family: 'font73252', "IBM Plex Sans", Arial, sans-serif; /*font73468 = Trade Gothic LT*/
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #451400;
+}
+
+.navLink:hover {
+    color: #ad2118;
+    border-bottom: solid #ad2118;
+}
+
+.navLink::after {
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    content: "";
+    height: 3px;
+    width: 70%;
+    background: white;
+}
+
+.headerButton {
+    width: 200px;
+    height: 40px;
+    background: #451400;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;    
+}
+
+.headerButton:hover {
+    background: black;
+}
+
+.fi-xnsuxl-codeigniter {    /*Flame icon*/
+    font-size: 1.1rem;
+    color: white;
+    padding-right: 5px;
+}
+
+.headerButton_span {
+  color: white;
+  letter-spacing: 1.15px;
+  padding-left: 10px; 
+  border-left: solid 1px; 
+}
