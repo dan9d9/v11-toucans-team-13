@@ -15,7 +15,7 @@ body {
 /***NAVIGATION***/
 
     /*Begin Desktop Navigation*/
-#desktop_Nav {
+#desktopNav {
     position: sticky;
     top: 0;
     display: flex;
@@ -131,15 +131,33 @@ body {
 /*End Hamburger Menu*/
 /*Begin Mobile Nav Section*/
 
-#mobile_Nav {
+#mobileNav {
     position: absolute;
+    top: 0;
     /* left: -100%; */
-    display: flex;
-    flex-flow: column;
     height: 100%;
     width: 100%;
     /* visibility: hidden; */
-    background-color: gray;
+    background-color: white;
+}
+
+.mobileNav_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    border-bottom: solid 1px;
+}
+
+.hamburger_close {
+    height: 100%;
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger_close_span {
+    font-size: 1.5rem;
 }
 
 .navList--mobile {
@@ -159,8 +177,9 @@ body {
 }
 
 .headerButton--mobile {
+    display: block;
     width: 200px;
-    align-self: center;
+    margin: auto;
 }
 
 /*End Mobile Navigation*/
