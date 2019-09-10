@@ -14,6 +14,7 @@ body {
 
 /***NAVIGATION***/
 
+    /*Begin Desktop Navigation*/
 #desktop_Nav {
     position: sticky;
     top: 0;
@@ -34,45 +35,6 @@ body {
 .logo {
     height: 80px;
 }
-
-/*Hamburger Menu*/
-.hamburger {
-    background: white;
-    border: none;
-    margin-right: 1.5em;
-    margin-left: -3em;
-    visibility: hidden;
-    cursor: pointer;
-}
-
-.hamburger_visible {    /*Added/Removed with JS*/
-    visibility: visible;
-    margin-left: -1em;
-}
-
-.hamburger div {
-    background: #451400;
-    width: 30px;
-    height: 3px;
-    margin: 3px 0;
-    border-radius: 10px;
-}
-
-.hamburger div:last-child {
-    width: 15px;
-}
-
-
-#mobile_Nav {
-    position: absolute;
-    /* left: -100%; */
-    display: flex;
-    flex-flow: column;
-    height: 100%;
-    /* visibility: hidden; */
-}
-
-/*END Hamburger Menu*/
 
 .navList {
     display: flex;
@@ -96,7 +58,7 @@ body {
     color: #ad2118; 
 }
 
-.navLink::after {       /*Bottom border effect*/
+.navLink::after {       /*Bottom border effect on hover*/
     position: absolute;
     left: 0;
     bottom: -3px;
@@ -135,14 +97,81 @@ body {
 }
 
 .headerButton_span {
-  color: white;
-  letter-spacing: 1.15px;
-  padding-left: 10px; 
-  border-left: solid 1px; 
+    color: white;
+    letter-spacing: 1.15px;
+    padding-left: 10px; 
+    border-left: solid 1px; 
 }
+
+    /*End Desktop Navigation*/
+    /*Begin Mobile Navigation*/
+
+/*Hamburger Menu*/
+.hamburger {
+    background: white;
+    border: none;
+    margin-right: 1.5em;
+    margin-left: -3em;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.hamburger div {
+    background: #451400;
+    width: 30px;
+    height: 3px;
+    margin: 3px 0;
+    border-radius: 10px;
+}
+
+.hamburger div:last-child {
+    width: 15px;
+}
+
+/*End Hamburger Menu*/
+/*Begin Mobile Nav Section*/
+
+#mobile_Nav {
+    position: absolute;
+    /* left: -100%; */
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+    /* visibility: hidden; */
+    background-color: gray;
+}
+
+.navList--mobile {
+    display: flex;
+    flex-flow: column nowrap;
+    list-style: none;
+    margin-top: 2em;
+    margin-left: 3em;
+}
+
+.navList_item--mobile {
+   margin-bottom: 1em; 
+}
+
+.navLink--mobile {
+    font-size: 2.5rem;   
+}
+
+.headerButton--mobile {
+    width: 200px;
+    align-self: center;
+}
+
+/*End Mobile Navigation*/
 
 /*Media Queries*/
 @media screen and (max-width: 998px)  {
+    .hamburger {
+        visibility: visible;
+        margin-left: -1em;    
+    }
+
     .logo {
         height: 50px;
     }
