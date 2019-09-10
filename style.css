@@ -14,12 +14,15 @@ body {
 
 /***NAVIGATION***/
 header {
+    position: sticky;
+    top: 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     border-bottom: solid 1px;
     padding: 0.5em 1.5em;
+    background: white;
 }
 
 .navList {
