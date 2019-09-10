@@ -41,18 +41,22 @@ header {
 }
 
 .navLink:hover {
-    color: #ad2118;
-    border-bottom: solid #ad2118;
+    color: #ad2118; 
 }
 
-.navLink::after {
+.navLink::after {       /*Bottom border effect*/
     position: absolute;
-    right: 0;
+    left: 0;
     bottom: -3px;
     content: "";
     height: 3px;
-    width: 70%;
-    background: white;
+    width: 0px;
+    background: #ad2118;
+    transition: width 0.2s;
+}
+
+.navLink:hover::after {
+    width: 25px;
 }
 
 .headerButton {
