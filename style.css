@@ -30,6 +30,10 @@ header {
     align-items: center;
 }
 
+.logo {
+    height: 80px;
+}
+
 /*Hamburger Menu*/
 .hamburger {
     background: white;
@@ -97,8 +101,8 @@ header {
 }
 
 .headerButton {
-    width: 200px;
     height: 40px;
+    padding: 0 1.5em;
     background-image: linear-gradient(to right, black 50%, #451400 50%);
     background-position: right bottom;
     background-size: 200% 100%;
@@ -124,6 +128,26 @@ header {
   letter-spacing: 1.15px;
   padding-left: 10px; 
   border-left: solid 1px; 
+}
+
+/*Media Queries*/
+@media screen and (max-width: 998px)  {
+    .logo {
+        height: 50px;
+    }
+
+    .navList {
+        visibility: hidden;
+        width: 0px;
+    }
+
+    .headerButton {
+        padding: 0 1em;
+    }
+
+    .headerButton_span {
+        font-size: 90%;
+    }
 }
 
 /*****END NAVIGATION*****/
