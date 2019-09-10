@@ -25,6 +25,40 @@ header {
     background: white;
 }
 
+.iconContainer {    /*contains hamburger menu and chipotle icon*/
+    display: flex;
+    align-items: center;
+}
+
+/*Hamburger Menu*/
+.hamburger {
+    background: white;
+    border: none;
+    margin-right: 1.5em;
+    margin-left: -3em;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.hamburger_visible {    /*Added with JS*/
+    visibility: visible;
+    margin-left: -1em;
+}
+
+.hamburger div {
+    background: #451400;
+    width: 30px;
+    height: 3px;
+    margin: 3px 0;
+    border-radius: 10px;
+}
+
+.hamburger div:last-child {
+    width: 15px;
+}
+
+/*END Hamburger Menu*/
+
 .navList {
     display: flex;
     flex-flow: row nowrap;
@@ -91,3 +125,5 @@ header {
   padding-left: 10px; 
   border-left: solid 1px; 
 }
+
+/*****END NAVIGATION*****/
