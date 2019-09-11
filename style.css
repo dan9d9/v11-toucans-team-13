@@ -90,3 +90,7 @@ footer{
 
 }
 
+footer li{
+    list-style-type: none;
+}
+
