@@ -139,6 +139,7 @@ body {
     width: 100%;
     /* visibility: hidden; */
     background-color: white;
+    overflow: auto;
 }
 
 .mobileNav_header {
