@@ -147,3 +147,25 @@ footer li{
     margin: 2vmin;
 }
 
+/*FOOTER Medium screen*/
+
+@media (min-width: 664px) and (max-width: 1024px){
+    footer{
+        height: 240px;
+    }
+
+    .footerContainer{
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .connectDiv{
+        margin-bottom: 0;
+    }
+
+    .downAppDiv{
+         flex-flow:row wrap;
+    }
+}
+
+
