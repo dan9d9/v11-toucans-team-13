@@ -166,6 +166,7 @@ body {
     flex-flow: column nowrap;
     list-style: none;
     margin-top: 2em;
+    margin-bottom: 2em;
     margin-left: 3em;
 }
 
@@ -202,7 +203,7 @@ body {
     }
 
     .headerButton {
-        padding: 0 1em;
+        padding: 0 0.5em;
     }
 
     .headerButton_span {
