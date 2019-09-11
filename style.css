@@ -75,7 +75,7 @@ body {
 
 .headerButton {
     height: 40px;
-    padding: 0 1.5em;
+    padding: 0 1.2em 0 1em;
     background-image: linear-gradient(to right, black 50%, #451400 50%);
     background-position: right bottom;
     background-size: 200% 100%;
@@ -91,9 +91,8 @@ body {
 }
 
 .fi-xnsuxl-codeigniter {    /*Flame icon*/
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: white;
-    padding-right: 5px;
 }
 
 .headerButton_span {
@@ -188,6 +187,10 @@ body {
 
 /*Media Queries*/
 @media screen and (max-width: 998px)  {
+    #desktopNav {
+        padding: 0.5em 1em;
+    }
+
     .hamburger {
         visibility: visible;
         margin-left: -1em;    
@@ -203,11 +206,16 @@ body {
     }
 
     .headerButton {
-        padding: 0 0.5em;
+        height: 35px;
     }
 
     .headerButton_span {
         font-size: 90%;
+        padding-left: 8px;
+    }
+
+    .fi-xnsuxl-codeigniter {    /*Flame icon*/
+        font-size: 1rem;
     }
 }
 
