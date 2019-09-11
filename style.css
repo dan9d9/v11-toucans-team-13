@@ -168,4 +168,16 @@ footer li{
     }
 }
 
+/*  FOOTER Small screen */
 
+@media all and (max-width: 664px){
+    footer{
+        height: 345px;
+    }
+
+    .aboutDiv, .connectDiv{
+        margin:2% 2%;
+
+    }
+
+}
