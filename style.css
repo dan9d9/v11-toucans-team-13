@@ -124,5 +124,12 @@ footer li{
     margin: 2vmin;
 }
 
+.connectDiv{
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: center +safe;
+    align-items:center;
+}
+
 
 
