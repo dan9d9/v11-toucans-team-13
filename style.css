@@ -109,3 +109,11 @@ footer li{
     text-transform:uppercase;
 }
 
+.footerMenu{
+    text-decoration: none;
+    color:#FFFFFF;
+    line-height: 1.7rem;
+}
+
+
+
