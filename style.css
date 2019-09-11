@@ -135,5 +135,15 @@ footer li{
     text-align: center;
 }
 
+.downAppDiv{
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: center +safe;
+    align-items:center;
+    
+}
 
+.app{
+    margin: 2vmin;
+}
 
