@@ -80,3 +80,13 @@ header {
   padding-left: 10px; 
   border-left: solid 1px; 
 }
+
+/***FOOTER large screen*/
+
+footer{
+    background-color: #1B0800;
+    height: 117px;
+    padding: 2%;
+
+}
+
