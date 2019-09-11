@@ -102,3 +102,10 @@ footer li{
     align-items: center;
     align-content: center;
 }
+
+.footerTitle{
+    text-align: center;
+    color:#FFFFFF;
+    text-transform:uppercase;
+}
+
