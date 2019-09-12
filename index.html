@@ -15,31 +15,71 @@
     </head>
     <body>
         <header>
-            <img alt="Chipotle logo" src="/icons/cmg-medallion-logo.svg"/>
-            <nav>
-                <ul class="navList">
-                    <li class="navList_item">
-                        <a class="navLink" href="#">ORDER</a>
-                    </li>
-                    <li class="navList_item">
-                        <a class="navLink" href="#">CATERING</a>
-                    </li>
-                    <li class="navList_item">
-                        <a class="navLink" href="#">REWARDS</a>
-                    </li>
-                    <li class="navList_item">
-                        <a class="navLink" href="#">OUR VALUES</a>
-                    </li>
-                    <li class="navList_item">
-                        <a class="navLink" href="#">NUTRITION</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="headerButton" href="#">
-                <i class="fi-xnsuxl-codeigniter"></i>   <!--Friconix flame icon-->
-                <span class="headerButton_span">FIND A CHIPOTLE</span>
-            </button>
-        </header>
+            <section id="desktopNav">
+                <div class="iconContainer">
+                    <button class="hamburger" type="button" aria-label="Menu" aria-controls="navigation">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </button>
+                    <a href="#"><img class="logo" alt="Chipotle logo" src="./icons/cmg-medallion-logo.svg"/></a>
+                </div>
+                <nav>
+                    <ul class="navList">
+                        <li class="navList_item">
+                            <a class="navLink" href="#">ORDER</a>
+                        </li>
+                        <li class="navList_item">
+                            <a class="navLink" href="#">CATERING</a>
+                        </li>
+                        <li class="navList_item">
+                            <a class="navLink" href="#">REWARDS</a>
+                        </li>
+                        <li class="navList_item">
+                            <a class="navLink" href="#">OUR VALUES</a>
+                        </li>
+                        <li class="navList_item">
+                            <a class="navLink" href="#">NUTRITION</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="headerButton" href="#">
+                    <i class="fi-xnsuxl-codeigniter"></i>   <!--Friconix flame icon-->
+                    <span class="headerButton_span">FIND A CHIPOTLE</span>
+                </button>
+            </section>
+            <section id="mobileNav">
+                <div class="mobileNav_header">
+                    <a href="#"><img class="logo" alt="Chipotle logo" src="./icons/cmg-medallion-logo.svg"/></a>
+                    <button class="hamburger_close" type="button" aria-label="Menu" aria-controls="navigation">
+                        <span class="hamburger_close_span">X</span>
+                    </button>
+                </div>
+                <nav>
+                    <ul class="navList--mobile">
+                        <li class="navList_item navList_item--mobile">
+                            <a class="navLink navLink--mobile" href="#">ORDER</a>
+                        </li>
+                        <li class="navList_item navList_item--mobile">
+                            <a class="navLink navLink--mobile" href="#">CATERING</a>
+                        </li>
+                        <li class="navList_item navList_item--mobile">
+                            <a class="navLink navLink--mobile" href="#">REWARDS</a>
+                        </li>
+                        <li class="navList_item navList_item--mobile">
+                            <a class="navLink navLink--mobile" href="#">OUR VALUES</a>
+                        </li>
+                        <li class="navList_item navList_item--mobile">
+                            <a class="navLink navLink--mobile" href="#">NUTRITION</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="headerButton headerButton--mobile" href="#">
+                    <i class="fi-xnsuxl-codeigniter"></i>   <!--Friconix flame icon-->
+                    <span class="headerButton_span">FIND A CHIPOTLE</span>
+                </button>    
+            </section>
+    </header>
 
         <!--Showcase-->
         <section>
@@ -153,20 +193,29 @@
         <!--End of Find a Chipotle section-->
 
         <footer>
-            <div>
-                <h2>About us</h2>
+        <div class="footerContainer">
+            <div class="aboutDiv">
+                <h2 class="footerTitle">About us</h2>
                 <ul>
-                    <li><a>Our Values</a></li>
-                    <li><a>News and Events</a></li>
-                    <li><a>Contact Support</a></li>
+                    <li><a href="#" class="footerMenu">Our Values</a></li>
+                    <li><a href="#" class="footerMenu">News and Events</a></li>
+                    <li><a href="#" class="footerMenu">Contact Support</a></li>
                 </ul>
             </div>
-            <div>
-                <h2>Connect with us</h2>
-                <img src=""/>
-                <img src=""/>
-                <img src=""/>
+            <div class="connectDiv">
+                <h2 class="footerTitle">Connect with us</h2>
+                <a href="https://www.facebook.com"><img class="socialIcon" src="icons/facebook.png"/></a>
+                <a href="https://www.instagram.com"><img class="socialIcon" src="icons/insta.png"/></a>
+                <a href="https://twitter.com"><img class="socialIcon" src="icons/twitter.png"/></a>
             </div>
+        </div>
+        <div class="downAppDiv">
+            <h2 class="footerTitle">Download our app</h2>
+            <div>
+                <a href="#"><img class="app" src="apple-store.png"/></a>
+                <a href="#"><img class="app" src="google-play.png"/></a>
+            </div>
+       <div>
 
         </footer>
         <script type="text/javascript" src="main.js"></script>
