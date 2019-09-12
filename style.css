@@ -14,6 +14,10 @@ body {
 
 /***NAVIGATION***/
 
+header {
+    overflow: hidden;
+}
+
     /*Begin Desktop Navigation*/
 #desktopNav {
     position: sticky;
@@ -218,113 +222,6 @@ body {
         font-size: 1rem;
     }
 }
-
-}
-
-.hamburger div {
-    background: #451400;
-    width: 30px;
-    height: 3px;
-    margin: 3px 0;
-    border-radius: 10px;
-}
-
-.hamburger div:last-child {
-    width: 15px;
-}
-
-/*End Hamburger Menu*/
-/*Begin Mobile Nav Section*/
-
-#mobileNav {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    overflow: auto;
-    transition: all 0.08s;
-}
-
-.mobileNav_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 2em;
-    border-bottom: solid 1px;
-}
-
-.hamburger_close {
-    height: 100%;
-    background: white;
-    border: none;
-    cursor: pointer;
-}
-
-.hamburger_close_span {
-    font-size: 1.5rem;
-}
-
-.navList--mobile {
-    display: flex;
-    flex-flow: column nowrap;
-    list-style: none;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    margin-left: 3em;
-}
-
-.navList_item--mobile {
-   margin-bottom: 1em; 
-}
-
-.navLink--mobile {
-    font-size: 2.5rem;   
-}
-
-.headerButton--mobile {
-    display: block;
-    width: 200px;
-    margin: auto;
-}
-
-/*End Mobile Navigation*/
-
-/*Media Queries*/
-@media screen and (max-width: 998px)  {
-    #desktopNav {
-        padding: 0.5em 1em;
-    }
-
-    .hamburger {
-        visibility: visible;
-        margin-left: -1em;    
-    }
-
-    .logo {
-        height: 50px;
-    }
-
-    .navList {
-        visibility: hidden;
-        width: 0px;
-    }
-
-    .headerButton {
-        height: 35px;
-    }
-
-    .headerButton_span {
-        font-size: 90%;
-        padding-left: 8px;
-    }
-
-    .fi-xnsuxl-codeigniter {    /*Flame icon*/
-        font-size: 1rem;
-    }
-}
-
 
 /*****END NAVIGATION*****/
 /***FOOTER large screen*/
