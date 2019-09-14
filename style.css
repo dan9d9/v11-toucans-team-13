@@ -224,6 +224,47 @@ header {
 }
 
 /*****END NAVIGATION*****/
+.heroSection {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./Chipotle-Clone-Images/chip_showcase.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.heroSection_titleContainer {
+    position: relative;
+    width: 70%;
+    margin: auto;
+    top: 42%;
+    outline: solid gold;
+}
+
+.heroSection_titleContainer h3 {
+    width: 100%;
+    text-align: center;
+    outline: solid green;
+
+}
+
+.heroSection_titleContainer h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    outline: solid blue;
+
+}
+
+.heroSection_orderContainer {
+    position: relative;
+    width: 70%;
+    top: 70%;
+    margin: auto;
+    outline: solid red;
+}
+
+
 /***FOOTER large screen*/
 
 footer{
