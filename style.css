@@ -12,6 +12,10 @@ body {
     font-family: "Nunito", "IBM Plex Sans", Arial, sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 /***NAVIGATION***/
 
 header {
@@ -230,20 +234,26 @@ header {
     width: 100%;
     background-image: url(./Chipotle-Clone-Images/chip_showcase.jpg);
     background-position: center;
-    background-size: cover;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
 }
 
 .heroSection_titleContainer {
-    position: relative;
-    width: 70%;
+    position: absolute;
+    top: 0; bottom: 0; 
+    width: 100%;
+    max-height: 20%;
     margin: auto;
-    top: 42%;
     outline: solid gold;
 }
 
 .heroSection_titleContainer h3 {
     width: 100%;
+    /* margin-bottom: .5em; */
     text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 1.15px;
+
     outline: solid green;
 
 }
@@ -251,18 +261,44 @@ header {
 .heroSection_titleContainer h1 {
     width: 100%;
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
+    letter-spacing: 1.15px;
+    /* line-height: 1.15; */
+
     outline: solid blue;
 
 }
 
 .heroSection_orderContainer {
-    position: relative;
-    width: 70%;
-    top: 70%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0; right: 0;
     margin: auto;
+    bottom: 20%;
+    max-width: 50%;
+    height: min-content;
+    font-size: 1.3rem;
+
+    text-align: center;
+    padding: 0.5em 1em 0.5em 0.5em;
+    font-weight: bold;
     outline: solid red;
 }
+
+.orderContainer_description {
+    width: 70%;
+
+    outline: dotted black;
+}
+
+.orderContainer_button {
+    width: 30%;
+    
+    
+    outline: dotted gold;
+}
+
 
 
 /***FOOTER large screen*/
