@@ -13,7 +13,15 @@ body {
 }
 
 /***NAVIGATION***/
+
 header {
+    overflow: hidden;
+}
+
+    /*Begin Desktop Navigation*/
+#desktopNav {
+    position: sticky;
+    top: 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -85,7 +93,7 @@ header {
 
 footer{
     background-color: #1B0800;
-    height: 150px;
+    
     padding: 2%;
 
 }
@@ -150,9 +158,7 @@ footer li{
 /*FOOTER Medium screen*/
 
 @media (min-width: 664px) and (max-width: 1024px){
-    footer{
-        height: 240px;
-    }
+    
 
     .footerContainer{
         flex-flow: row wrap;
@@ -171,9 +177,7 @@ footer li{
 /*  FOOTER Small screen */
 
 @media all and (max-width: 664px){
-    footer{
-        height: 345px;
-    }
+   
 
     .aboutDiv, .connectDiv{
         margin:2% 2%;
