@@ -93,6 +93,14 @@ header {
 
 /***DROPDOWNSECTION large scale***/
 
+#dropDownSection{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items:center; 
+    align-content: center; 
+  }
+
 .bgText{
     display: flex;
     flex-flow: row wrap;
