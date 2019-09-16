@@ -2,6 +2,7 @@ const btn = document.querySelector('.hamburger');
 const mobileNav = document.getElementById('mobileNav');
 const body = document.querySelector('body');
 
+// Hamburger Menu open/close
 function closeNav() {
     mobileNav.style.left = -100 + '%';
     body.style.overflow = '';
@@ -19,10 +20,19 @@ function openNav() {
             closeNav();
         }
     })
-
-    // mobileNav.addEventListener('touchmove', function(e) {   // Prevent scroll on touch devices
-    //     e.preventDefault();
-    // })
 }   
    
  btn.addEventListener('click', openNav);
+
+
+
+// Reposition hero_section bg image to keep centered around bowl on screens<640px width
+function repositionBackground() {
+    const bgImage = document.querySelector('.heroSection');
+
+    if(window.innerWidth <= 640) {
+        bgImage.style.backgroundPositionX = (window.innerWidth - 640)/2 + 'px';
+    }  
+}
+
+ window.addEventListener('resize', repositionBackground);
