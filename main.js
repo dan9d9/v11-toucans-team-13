@@ -16,3 +16,7 @@ text.style.padding = "1%";
 text.style.color = "#451400";
 text.style.fontWeight = "#bold";
 text.style.fontSize = "30pt";
+
+//Border bottom line
+var select = document.querySelector('select');
+select.style.borderBottom = "3px solid #451400";
