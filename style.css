@@ -238,7 +238,6 @@ header {
     justify-content: space-around;
     align-items: center;
     height: 100vh;
-    width: 100%;
     background-image: url(./Chipotle-Clone-Images/chip_showcase.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -247,7 +246,7 @@ header {
 .heroSection_titleContainer {
     display: flex;
     flex-flow: column nowrap;
-    margin-top: 8em;
+    margin-top: 10em;
     
     /* outline: solid gold; */
 }
@@ -269,6 +268,7 @@ header {
     text-align: center;
     font-size: 4rem;
     letter-spacing: 1.15px;
+    line-height: 1.1;
     color: #ad2118;
     background: rgba(241, 241, 241, 0.8);
 
@@ -280,21 +280,26 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2em;
     font-size: 1.3rem;
     text-align: center;
     font-weight: bold;
-    background: #ad2118;
     /* outline: solid red; */
 }
 
 .orderContainer_description {
+    background: #ad2118;
     padding: 0.5em 1.5em;
     /* outline: dotted black; */
 }
 
+.description--small {
+    display: none;
+}
+
 .orderContainer_button {
     color: white;
-    padding: 0.5em 1.5em;
+    padding: 0.37em 1.5em;
     background-image: linear-gradient(to right, #ad2118 50%, #88120a 50%);
     background-position: right bottom;
     background-size: 200% 100%;
@@ -311,6 +316,81 @@ header {
     font-size: 1.5rem;
 }
 
+/*Media Queries Hero Section*/
+@media screen and (min-height: 800px) {
+    .heroSection {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .heroSection {
+        background-size: contain;
+    }
+
+    .heroSection_titleContainer {
+        margin-top: 8em;
+    }
+
+    .heroSection_titleContainer h3 {
+        font-size: 1.1rem;
+    }
+    
+    .heroSection_titleContainer h1 {
+        font-size: 3rem;
+    }
+
+    .heroSection_orderContainer {
+        font-size: 1rem;
+        margin-bottom: 5em;
+    }
+
+    .fi-xwlrxl-arrow-simple-wide {  /*Friconix arrow icon*/
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .heroSection {
+        background-size: auto;
+        background-position: initial;
+    }
+
+    .heroSection_titleContainer h3 {
+        font-size: 0.9rem;
+    }
+    
+    .heroSection_titleContainer h1 {
+        font-size: 2rem;
+    }
+
+    .heroSection_orderContainer {
+        font-size: 0.9rem;
+    }
+
+    .orderContainer_description, .orderContainer_button {
+        padding: 0.5em;
+    }
+
+    .fi-xwlrxl-arrow-simple-wide {  /*Friconix arrow icon*/
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .heroSection_titleContainer h1 {
+        padding: 0 0.2em;
+    }
+    
+    .description--large {
+        display:none;
+    }
+
+    .description--small {
+        display: block;
+    }
+    
+}
 
 
 
