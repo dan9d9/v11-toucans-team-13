@@ -89,6 +89,22 @@ header {
   border-left: solid 1px; 
 }
 
+
+
+/***DROPDOWNSECTION large scale***/
+
+.bgText{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items:center; 
+    align-content: center; 
+
+  }
+
+
+
+
 /***FOOTER large screen*/
 
 footer{
