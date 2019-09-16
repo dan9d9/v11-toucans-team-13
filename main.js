@@ -9,4 +9,10 @@ background.style.height = "200px";
 var backgroundText = document.querySelector('.bgText');
 backgroundText.style.width = "100%";
 
-
+//Text p style
+var text = document.querySelector('.dropText');
+text.style.backgroundColor = "#F7F2ED";
+text.style.padding = "1%";
+text.style.color = "#451400";
+text.style.fontWeight = "#bold";
+text.style.fontSize = "30pt";
