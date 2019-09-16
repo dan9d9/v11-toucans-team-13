@@ -30,7 +30,7 @@ function openNav() {
 
 //Background style
 var background = document.querySelector('#dropDownSection');
-background.style.backgroundImage = "url('/Chipotle Clone Images/bg-text.png')";
+background.style.backgroundImage = "url('Chipotle-Clone-Images/bg-text.png')";
 background.style.size = "cover";
 background.style.height = "200px";
 
