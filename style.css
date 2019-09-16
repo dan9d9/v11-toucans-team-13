@@ -97,7 +97,8 @@ header {
 }
 
 .headerButton:hover {
-    background: black;
+    transition: all 0.2s;
+    background-position: left bottom;
 }
 
 .fi-xnsuxl-codeigniter {    /*Flame icon*/
