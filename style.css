@@ -43,6 +43,12 @@ header {
     align-items: center;
 }
 
+.logo {
+    height: 80px;
+}
+
+
+
 .navList {
     display: flex;
     flex-flow: row nowrap;
