@@ -80,6 +80,10 @@ header {
     transition: width 0.2s;
 }
 
+.navLink:hover::after {
+    width: 25px;
+}
+
 .headerButton {
     width: 200px;
     height: 40px;
