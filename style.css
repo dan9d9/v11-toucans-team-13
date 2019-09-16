@@ -47,8 +47,6 @@ header {
     height: 80px;
 }
 
-
-
 .navList {
     display: flex;
     flex-flow: row nowrap;
@@ -69,8 +67,7 @@ header {
 
 .navLink:hover {
     color: #ad2118;
-    border-bottom: solid #ad2118;
-}
+   }
 
 .navLink::after {
     position: absolute;
