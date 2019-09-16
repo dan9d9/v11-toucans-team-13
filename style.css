@@ -38,6 +38,11 @@ header {
     background: white;
 }
 
+.iconContainer {    /*contains hamburger menu and chipotle icon*/
+    display: flex;
+    align-items: center;
+}
+
 .navList {
     display: flex;
     flex-flow: row nowrap;
