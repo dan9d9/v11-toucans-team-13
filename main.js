@@ -21,16 +21,18 @@ function openNav() {
         }
     })
 
-    // mobileNav.addEventListener('touchmove', function(e) {   // Prevent scroll on touch devices
-    //     e.preventDefault();
-    // })
+    mobileNav.addEventListener('touchmove', function(e) {   // Prevent scroll on touch devices
+        e.preventDefault();
+    })
 }   
    
  btn.addEventListener('click', openNav);
 
+ //DROPDOWN MENU
+
 //Background style
 var background = document.querySelector('#dropDownSection');
-background.style.backgroundImage = "url('Chipotle-Clone-Images/bg-text.png')";
+background.style.backgroundImage = "url('./Chipotle-Clone-Images/bg-text.png')";
 background.style.size = "cover";
 background.style.height = "200px";
 
