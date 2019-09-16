@@ -1,4 +1,12 @@
 
+const btn = document.querySelector('.hamburger');
+const mobileNav = document.getElementById('mobileNav');
+const body = document.querySelector('body');
+
+function closeNav() {
+    mobileNav.style.left = -100 + '%';
+    body.style.overflow = '';
+}
 
 function openNav() {   
     const btnClose = document.querySelector('.hamburger_close');
