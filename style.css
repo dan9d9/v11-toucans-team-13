@@ -85,12 +85,15 @@ header {
 }
 
 .headerButton {
-    width: 200px;
     height: 40px;
-    background: #451400;
+    padding: 0 1.2em 0 1em;
+    background-image: linear-gradient(to right, black 50%, #451400 50%);
+    background-position: right bottom;
+    background-size: 200% 100%;
     border: none;
     border-radius: 20px;
-    cursor: pointer;    
+    cursor: pointer;
+    transition: all 0.2s;  
 }
 
 .headerButton:hover {
