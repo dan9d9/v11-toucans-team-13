@@ -110,6 +110,16 @@ header {
 
   }
 
+.dropText select{
+    background-color: transparent;
+    color:#B68207;
+    border:none;
+    font-size:30pt;
+    appearance:none;
+    outline: none;
+    cursor: pointer;
+
+  }
 
 
 
