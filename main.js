@@ -3,6 +3,9 @@ const btn = document.querySelector('.hamburger');
 const mobileNav = document.getElementById('mobileNav');
 const body = document.querySelector('body');
 
+
+// Hamburger Menu open/close
+
 function closeNav() {
     mobileNav.style.left = -100 + '%';
     body.style.overflow = '';
@@ -21,12 +24,17 @@ function openNav() {
         }
     })
 
+
     mobileNav.addEventListener('touchmove', function(e) {   // Prevent scroll on touch devices
+
+    mobileNav.addEventListener('touchmove', function(e) {   // Prevent scroll on touch devices (Needs tested)
+
         e.preventDefault();
     })
 }   
    
  btn.addEventListener('click', openNav);
+
 
  //DROPDOWN MENU
 
@@ -51,3 +59,16 @@ text.style.fontSize = "30pt";
 //Border bottom line
 var select = document.querySelector('select');
 select.style.borderBottom = "3px solid #451400";
+
+
+
+// Reposition hero_section bg image to keep centered around bowl on screens<640px width
+function repositionBackground() {
+    const bgImage = document.querySelector('.heroSection');
+
+    if(window.innerWidth <= 640) {
+        bgImage.style.backgroundPositionX = (window.innerWidth - 640)/2 + 'px';
+    }  
+}
+
+ window.addEventListener('resize', repositionBackground);
