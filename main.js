@@ -19,10 +19,6 @@ function openNav() {
             closeNav();
         }
     })
-
-    mobileNav.addEventListener('touchmove', function(e) {   // Prevent scroll on touch devices (Needs tested)
-        e.preventDefault();
-    })
 }   
    
  btn.addEventListener('click', openNav);
