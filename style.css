@@ -1,3 +1,4 @@
+
 html {
     font-size: 100%;
 }
@@ -65,8 +66,8 @@ header {
 }
 
 .navLink:hover {
-    color: #ad2118; 
-}
+    color: #ad2118;
+   }
 
 .navLink::after {       /*Bottom border effect on hover*/
     position: absolute;
@@ -392,7 +393,35 @@ header {
     
 }
 
+/***DROPDOWNSECTION large scale***/
 
+#dropDownSection{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items:center; 
+    align-content: center; 
+  }
+
+.bgText{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items:center; 
+    align-content: center; 
+
+  }
+
+.dropText select{
+    background-color: transparent;
+    color:#B68207;
+    border:none;
+    font-size:30pt;
+    appearance:none;
+    outline: none;
+    cursor: pointer;
+
+  }
 
 /***FOOTER large screen*/
 
