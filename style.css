@@ -28,6 +28,16 @@ header {
     align-items: center;
     border-bottom: solid 1px;
     padding: 0.5em 1.5em;
+    background: white;
+}
+
+.iconContainer {    /*contains hamburger menu and chipotle icon*/
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
 }
 
 .navList {
@@ -49,44 +59,51 @@ header {
 }
 
 .navLink:hover {
-    color: #ad2118;
-    border-bottom: solid #ad2118;
+    color: #ad2118; 
 }
 
-.navLink::after {
+.navLink::after {       /*Bottom border effect on hover*/
     position: absolute;
-    right: 0;
+    left: 0;
     bottom: -3px;
     content: "";
     height: 3px;
-    width: 70%;
-    background: white;
+    width: 0px;
+    background: #ad2118;
+    transition: width 0.2s;
+}
+
+.navLink:hover::after {
+    width: 25px;
 }
 
 .headerButton {
-    width: 200px;
     height: 40px;
-    background: #451400;
+    padding: 0 1.2em 0 1em;
+    background-image: linear-gradient(to right, black 50%, #451400 50%);
+    background-position: right bottom;
+    background-size: 200% 100%;
     border: none;
     border-radius: 20px;
-    cursor: pointer;    
+    cursor: pointer;
+    transition: all 0.2s;    
 }
 
 .headerButton:hover {
-    background: black;
+    transition: all 0.2s;
+    background-position: left bottom;
 }
 
 .fi-xnsuxl-codeigniter {    /*Flame icon*/
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: white;
-    padding-right: 5px;
 }
 
 .headerButton_span {
-  color: white;
-  letter-spacing: 1.15px;
-  padding-left: 10px; 
-  border-left: solid 1px; 
+    color: white;
+    letter-spacing: 1.15px;
+    padding-left: 10px; 
+    border-left: solid 1px; 
 }
 
     /*End Desktop Navigation*/
