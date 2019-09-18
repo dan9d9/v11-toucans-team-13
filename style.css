@@ -435,6 +435,12 @@ header {
       align-content: center;
   }
 
+  .gridCardCointainer img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+
 
 /***FOOTER large screen*/
 
