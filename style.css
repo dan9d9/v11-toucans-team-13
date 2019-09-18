@@ -441,6 +441,14 @@ header {
     height: auto;
   }
 
+  .gridCardLeft{
+      display:grid;
+      grid-template-columns: 50% 50%;
+      justify-items: center;
+      align-items: stretch;
+      justify-content:center; 
+      align-content: stretch; 
+  }
 
 /***FOOTER large screen*/
 
