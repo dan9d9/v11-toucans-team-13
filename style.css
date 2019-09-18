@@ -426,11 +426,12 @@ header {
   /***CARD SECTION ONE large screen***/
 
   .gridCardContainer{
+      padding:3%;
       display:grid;
-      grid-template-columns: 20% 20%;
-      grid-column-gap: 4em;
-      justify-items: center;
-      align-items: center;
+      grid-template-columns: 30% 30%;
+      grid-column-gap: 10em;
+      justify-items: space-around;
+      align-items: space-around;
       justify-content: center;
       align-content: center;
   }
@@ -443,13 +444,13 @@ header {
 
   .gridCardLeft{
       display:grid;
-      grid-template-columns: 55% 100%;
+      grid-template-columns: 50% 50%;
       
   }
 
   .gridCardRight{
     display:grid;
-    grid-template-columns: 55% 100%;
+    grid-template-columns: 50% 50%;
     
 }
 
