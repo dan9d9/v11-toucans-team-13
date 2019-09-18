@@ -435,7 +435,7 @@ header {
       align-content: center;
   }
 
-  .gridCardCointainer img {
+  .gridCardContainer img {
     max-width: 100%;
     display: block;
     height: auto;
@@ -443,11 +443,8 @@ header {
 
   .gridCardLeft{
       display:grid;
-      grid-template-columns: 50% 50%;
-      justify-items: center;
-      align-items: stretch;
-      justify-content:center; 
-      align-content: stretch; 
+      grid-template-columns: 55% 100%;
+      
   }
 
 /***FOOTER large screen*/
