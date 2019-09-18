@@ -463,6 +463,10 @@ header {
     align-self: flex-end;
 }
 
+.border{
+    border:1px solid black;
+}
+
 /***FOOTER large screen*/
 
 footer{
