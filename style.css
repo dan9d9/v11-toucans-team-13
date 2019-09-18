@@ -393,7 +393,7 @@ header {
     
 }
 
-/***DROPDOWNSECTION large scale***/
+/***DROPDOWNSECTION large screen***/
 
 #dropDownSection{
     display: flex;
@@ -422,6 +422,19 @@ header {
     cursor: pointer;
 
   }
+
+  /***CARD SECTION ONE large screen***/
+
+  .gridCardContainer{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, 70%);
+      grid-column-gap: 4em;
+      justify-items: center;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+  }
+
 
 /***FOOTER large screen*/
 
