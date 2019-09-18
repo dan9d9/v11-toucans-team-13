@@ -456,7 +456,11 @@ header {
 
 .gridTextLeft{
     display:grid;
-    grid-template-rows: 30% 30% 30%;
+    grid-template-rows: 30% 30% 10%;
+}
+
+.cardBtn{
+    align-self: flex-end;
 }
 
 /***FOOTER large screen*/
