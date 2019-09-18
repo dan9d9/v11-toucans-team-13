@@ -454,6 +454,11 @@ header {
     
 }
 
+.gridTextLeft{
+    display:grid;
+    grid-template-rows: 30% 30% 30%;
+}
+
 /***FOOTER large screen*/
 
 footer{
