@@ -427,7 +427,7 @@ header {
 
   .gridCardContainer{
       display:grid;
-      grid-template-columns: repeat(auto-fit, 70%);
+      grid-template-columns: 20% 20%;
       grid-column-gap: 4em;
       justify-items: center;
       align-items: center;
