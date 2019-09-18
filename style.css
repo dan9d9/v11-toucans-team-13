@@ -447,6 +447,12 @@ header {
       
   }
 
+  .gridCardRight{
+    display:grid;
+    grid-template-columns: 55% 100%;
+    
+}
+
 /***FOOTER large screen*/
 
 footer{
