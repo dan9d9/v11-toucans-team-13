@@ -446,13 +446,15 @@ header {
 
   .gridCardLeft{
       display:grid;
-      grid-template-columns: 50% 50%;
+      grid-template-columns:repeat(auto-fit, minmax(50%,2fr));
+      border:1px solid #D4CBC7;
       
   }
 
   .gridCardRight{
     display:grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns:repeat(auto-fit, minmax(50%,2fr));
+      border:1px solid #D4CBC7;
     
 }
 
