@@ -459,8 +459,10 @@ header {
 }
 
 .gridTextLeft{
+    padding:3%;
     display:grid;
-    grid-template-rows: 30% 30% 10%;
+    grid-template-rows: 30%;
+    align-items: center;
 }
 
 .cardBtn{
