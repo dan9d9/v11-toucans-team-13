@@ -428,12 +428,9 @@ header {
   .gridCardContainer{
       padding:3%;
       display:grid;
-      grid-template-columns: 30% 30%;
-      grid-column-gap: 10em;
-      justify-items: space-around;
-      align-items: space-around;
+      grid-template-columns:repeat(auto-fit, minmax(45%,1fr));
+      grid-column-gap: 2em;
       justify-content: center;
-      align-content: center;
   }
 
   .gridCardContainer img {
