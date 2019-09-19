@@ -473,6 +473,11 @@ header {
     border:none; 
 }
 
+.cardTitle{
+    color:#451400;
+    font-size: ;
+}
+
 .border{
     border:1px solid black;
 }
