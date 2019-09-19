@@ -466,7 +466,11 @@ header {
 }
 
 .cardBtn{
-    align-self: flex-end;
+    padding:3%;
+    background-color:#451400;
+    color:#FFFFFF;
+    font-weight:bold;
+    border:none; 
 }
 
 .border{
