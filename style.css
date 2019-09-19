@@ -433,6 +433,11 @@ header {
       justify-content: center;
   }
 
+  .gridCardContainer figure{
+    padding:0;
+    margin:0;
+  }
+
   .gridCardContainer img {
     max-width: 100%;
     display: block;
