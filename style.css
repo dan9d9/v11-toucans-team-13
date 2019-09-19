@@ -478,6 +478,10 @@ header {
     font-size: ;
 }
 
+.cardText{
+    color:#451400;
+}
+
 .border{
     border:1px solid black;
 }
