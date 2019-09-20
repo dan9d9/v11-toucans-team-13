@@ -59,8 +59,9 @@ header {
 
 .navLink {
     position: relative;
-    font-family: 'font73252', "IBM Plex Sans", Arial, sans-serif; /*font73468 = Trade Gothic LT*/
-    font-size: 1.5rem;
+    font-family: 'Open Sans', "IBM Plex Sans", Arial, sans-serif; /*font73468 = Trade Gothic LT*/
+    font-size: 1.3rem;
+    letter-spacing: -1px;
     text-decoration: none;
     color: #451400;
 }
@@ -71,17 +72,17 @@ header {
 
 .navLink::after {       /*Bottom border effect on hover*/
     position: absolute;
-    left: 0;
+    left: 1px;
     bottom: -3px;
     content: "";
-    height: 3px;
+    height: 2px;
     width: 0px;
     background: #ad2118;
     transition: width 0.2s;
 }
 
 .navLink:hover::after {
-    width: 25px;
+    width: 20px;
 }
 
 .headerButton {
@@ -186,6 +187,21 @@ header {
 
 .navLink--mobile {
     font-size: 2.5rem;   
+}
+
+.navLink--mobile::after {       /*Bottom border effect on hover*/
+    position: absolute;
+    left: 1px;
+    bottom: -2px;
+    content: "";
+    height: 4px;
+    width: 0px;
+    background: #ad2118;
+    transition: width 0.2s;
+}
+
+.navLink--mobile:hover::after {
+    width: 50px;
 }
 
 .headerButton--mobile {
