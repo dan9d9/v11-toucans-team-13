@@ -550,28 +550,28 @@ header {
 }
 
 .gridCard_text {
+    position: relative;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
 
 .gridCard_text_info > p {
-    word-break: break-word;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.6;
     padding: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
 }
 
 .gridCard_text_button {
     display: block;
+    height: 35px;
+    width: 70%;
+    margin-bottom: 1em;
+    padding: 0.5em;
     background-image: linear-gradient(to right, black 50%, #451400 50%);
     background-position: right bottom;
     background-size: 200% 100%; 
-    height: 35px;
-    width: 70%;
-    padding: 0.5em;
-    margin-bottom: 1em;
     text-align: center;
     transition: all 0.2s;
 }
@@ -584,7 +584,6 @@ header {
 .gridCard_text_button span { 
     width: 100%; 
     font-weight: bold;
-    letter-spacing: 1px; 
 }
 
 .text--brown {
