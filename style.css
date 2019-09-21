@@ -515,6 +515,7 @@ header {
     grid-column-gap: 2em;
     justify-content: center;
 }
+
 .gridCard {
     display: flex;
     flex-flow: column nowrap;
@@ -592,6 +593,31 @@ header {
 
 .text--white {
     color: white;
+}
+
+/**Media Queries CARD SECTION TWO**/
+@media screen and (max-width: 998px) {
+    .gridCard_img h2 { 
+        font-size: 2rem;
+    } 
+    
+    .gridCard_text_info > p {
+        font-size: 1rem;
+        margin-bottom: 2em;
+    }
+
+    .gridCard_text_button span { 
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+    .gridCardContainer_bottom {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 600px));
+        grid-row-gap: 2em;
+    }
+
 }
 /***End CARD SECTION TWO***/
 /***FOOTER large screen*/
