@@ -438,7 +438,7 @@ header {
     margin:0;
   }
 
-  .gridCardContainer img {
+  .gridCardContainer img, #responsiveCardContainer img{
     max-width: 100%;
     display: block;
     height: auto;
