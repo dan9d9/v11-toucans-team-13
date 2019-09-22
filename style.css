@@ -478,6 +478,10 @@ header {
     border:1px solid black;
  }
 
+ #responsiveCardContainer{
+    display:none;
+}
+
 /***CARD SECTION ONE medium screen***/
 
 /***CARD SECTION ONE small screen***/
