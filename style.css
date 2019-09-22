@@ -444,26 +444,18 @@ header {
     height: auto;
   }
 
-  .gridCardLeft{
+  .gridCardLeft, .gridCardRight{
       display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(50%,2fr));
+      grid-template-columns:repeat(auto-fit, minmax(50%,1fr));
       border:1px solid #D4CBC7;
-      
   }
-
-  .gridCardRight{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(50%,2fr));
-      border:1px solid #D4CBC7;
-    
-}
 
 .gridTextLeft{
     padding:3%;
     display:grid;
     grid-template-rows: 30%;
     align-items: center;
-}
+ }
 
 .cardBtn{
     padding:3%;
@@ -471,20 +463,20 @@ header {
     color:#FFFFFF;
     font-weight:bold;
     border:none; 
-}
+ }
 
 .cardTitle{
     color:#451400;
     font-size: 1.8rem;
-}
+ }
 
 .cardText{
     color:#451400;
-}
+ }
 
 .border{
     border:1px solid black;
-}
+ }
 
 /***CARD SECTION ONE medium screen***/
 
