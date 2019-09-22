@@ -494,9 +494,49 @@ header {
     display:none;
 }
 
-/***CARD SECTION ONE medium screen***/
+/***CARD SECTION ONE medium and small screen***/
 
-/***CARD SECTION ONE small screen***/
+@media screen and (max-width:938px){
+    .gridCardContainer{
+        grid-template-columns: repeat(auto-fit,minmax(85%,85%));
+        grid-row-gap:2em;
+    }
+
+}
+
+@media screen and (max-width:619px){
+    .gridCardContainer{
+        display:none;
+    }
+
+    .responsiveCardLeft, .responsiveCardRight{
+        border:1px solid #D4CBC7;
+    }
+
+    #responsiveCardContainer{
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+        grid-gap: 2% 4%;
+        margin: 7%;
+    }
+
+    #responsiveCardContainer img{
+        max-width:100%;
+        max-height:100%;
+        object-fit:contain;
+    }
+
+    .cardText, .cardTitle{
+        padding:2%;
+    }
+
+    .cardBtn{
+        margin-inline-start: 37%;
+        margin-bottom: 2%
+
+    }
+
+}
 
 /**End of CARD SECTION ONE**/
 
