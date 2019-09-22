@@ -465,6 +465,18 @@ header {
     border:none; 
  }
 
+.cardBtn:hover{
+    animation-name:changeColor;
+    animation:changeColor 1s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes changeColor{
+    0% {background-color:#451400;}
+    50%{background-color:black;}
+    100%{background-color:black;}
+}
+
 .cardTitle{
     color:#451400;
     font-size: 1.8rem;
