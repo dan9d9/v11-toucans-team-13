@@ -428,11 +428,15 @@ header {
 
   }
 
+.dropText{
+    font-size:2em;
+}
+
 .dropText select{
     background-color: transparent;
     color:#B68207;
     border:none;
-    font-size:30pt;
+    font-size:1em;
     appearance:none;
     outline: none;
     cursor: pointer;
@@ -620,6 +624,54 @@ header {
 
 }
 /***End CARD SECTION TWO***/
+  /***DROPDOWNSECTION medium screen***/
+
+@media screen and (max-width:826px){
+    .dropText{
+        font-size:1.6em;
+        margin-left:3%;
+    }
+} 
+
+@media screen and (max-width:700px){
+    .dropText{
+        font-size:2.8em;
+        margin-left:3%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .dropText{
+        font-size:2.4em;
+        margin-left:3%;
+    }
+}
+
+
+  /***DROPSOWNSECTION small screen***/
+
+@media screen and (max-width:510px){
+    .dropText{
+        font-size:2em;
+        margin-left:3%;
+    }
+}
+
+@media screen and (max-width:428px){
+    .dropText{
+        font-size:1.7em;
+        margin-left:3%;
+    }
+}
+
+@media screen and (max-width:400px){
+    .dropText{
+        font-size:1.5em;
+        margin-left:3%;
+    }
+}
+
+
 /***FOOTER large screen*/
 
 footer{
