@@ -59,7 +59,7 @@ header {
 
 .navLink {
     position: relative;
-    font-family: 'Open Sans', "IBM Plex Sans", Arial, sans-serif; /*font73468 = Trade Gothic LT*/
+    font-family: 'Open Sans', "IBM Plex Sans", Arial, sans-serif;
     font-size: 1.3rem;
     letter-spacing: -1px;
     text-decoration: none;
@@ -443,6 +443,286 @@ header {
 
   }
 
+  /***CARD SECTION ONE large screen***/
+
+  .gridCardContainer{
+      padding:3%;
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(45%,1fr));
+      grid-column-gap: 2em;
+      justify-content: center;
+  }
+
+  .gridCardContainer figure{
+    padding:0;
+    margin:0;
+  }
+
+  .gridCardContainer img, #responsiveCardContainer img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+
+  .gridCardLeft, .gridCardRight{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(50%,1fr));
+      border:1px solid #D4CBC7;
+  }
+
+.gridTextLeft{
+    padding:3%;
+    display:grid;
+    grid-template-rows: 30%;
+    align-items: center;
+ }
+
+.cardBtn{
+    padding:3%;
+    background-color:#451400;
+    color:#FFFFFF;
+    font-weight:bold;
+    border:none; 
+ }
+
+.cardBtn:hover{
+    animation-name:changeColor;
+    animation:changeColor 1s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes changeColor{
+    0% {background-color:#451400;}
+    50%{background-color:black;}
+    100%{background-color:black;}
+}
+
+.cardTitle{
+    color:#451400;
+    font-size: 1.8rem;
+ }
+
+.cardText{
+    color:#451400;
+ }
+
+.border{
+    border:1px solid black;
+ }
+
+ #responsiveCardContainer{
+    display:none;
+}
+
+/***CARD SECTION ONE medium and small screen***/
+
+@media screen and (max-width:938px){
+    .gridCardContainer{
+        grid-template-columns: repeat(auto-fit,minmax(85%,85%));
+        grid-row-gap:2em;
+    }
+
+}
+
+@media screen and (max-width:619px){
+    .gridCardContainer{
+        display:none;
+    }
+
+    .responsiveCardLeft, .responsiveCardRight{
+        border:1px solid #D4CBC7;
+    }
+
+    #responsiveCardContainer{
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+        grid-gap: 2% 4%;
+        margin: 7%;
+    }
+
+    #responsiveCardContainer img{
+        max-width:100%;
+        max-height:100%;
+        object-fit:contain;
+    }
+
+    .cardText, .cardTitle{
+        padding:2%;
+    }
+
+    .cardBtn{
+        margin-inline-start: 37%;
+        margin-bottom: 2%
+
+    }
+
+}
+
+/**End of CARD SECTION ONE**/
+  /***DROPDOWNSECTION medium screen***/
+
+@media screen and (max-width:826px){
+    .dropText{
+        font-size:1.6em;
+        margin-left:3%;
+    }
+} 
+
+@media screen and (max-width:700px){
+    .dropText{
+        font-size:2.8em;
+        margin-left:3%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .dropText{
+        font-size:2.4em;
+        margin-left:3%;
+    }
+}
+
+
+  /***DROPSOWNSECTION small screen***/
+
+@media screen and (max-width:510px){
+    .dropText{
+        font-size:2em;
+        margin-left:3%;
+    }
+}
+
+@media screen and (max-width:428px){
+    .dropText{
+        font-size:1.7em;
+        margin-left:3%;
+    }
+}
+
+@media screen and (max-width:400px){
+    .dropText{
+        font-size:1.5em;
+        margin-left:3%;
+    }
+}
+
+/**Begin GUACAMOLE SLIDE SECTION**/
+
+
+/**End GUACAMOLE SLIDE SECTION**/
+/**Begin CARD SECTION TWO**/
+.gridCardContainer_bottom {
+    padding: 2em;
+    display:grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 2em;
+    justify-content: center;
+}
+
+.gridCard {
+    display: flex;
+    flex-flow: column nowrap;
+    border: solid 1px #D4CBC7;
+}
+
+.gridCard_img {
+    width: 100%;
+    height: 200px;
+    max-height: 200px;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.gridCard_img h2 {
+    position: relative;
+    width: max-content;
+    font-family: 'Open Sans', "IBM Plex Sans", Arial, sans-serif;
+    font-size: 2.5rem;
+    top: 30%;
+    margin: auto;
+    text-shadow: 0px 1px 1px #451400;
+}
+
+.gridCard_img--gifts {
+    background-image: url(./Chipotle-Clone-Images/chip_giftandgear.jpg);
+}
+
+.gridCard_img--fundraising {
+    background-image: url(./Chipotle-Clone-Images/fundraising.jpg);
+}
+
+.gridCard_text {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.gridCard_text_info > p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 1em;
+    margin-bottom: 3em;
+}
+
+.gridCard_text_button {
+    display: block;
+    height: 35px;
+    width: 70%;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    background-image: linear-gradient(to right, black 50%, #451400 50%);
+    background-position: right bottom;
+    background-size: 200% 100%; 
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.gridCard_text_button:hover {
+    transition: all 0.2s;
+    background-position: left bottom;
+}
+
+.gridCard_text_button span { 
+    width: 100%; 
+    font-weight: bold;
+}
+
+.text--brown {
+    color: #451400;
+}
+
+.text--white {
+    color: white;
+}
+
+/**Media Queries CARD SECTION TWO**/
+@media screen and (max-width: 998px) {
+    .gridCard_img h2 { 
+        font-size: 2rem;
+    } 
+    
+    .gridCard_text_info > p {
+        font-size: 1rem;
+        margin-bottom: 2em;
+    }
+
+    .gridCard_text_button span { 
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+    .gridCardContainer_bottom {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 600px));
+        grid-row-gap: 2em;
+    }
+
+}
+/***End CARD SECTION TWO***/
   /***DROPDOWNSECTION medium screen***/
 
 @media screen and (max-width:826px){
