@@ -59,7 +59,7 @@ header {
 
 .navLink {
     position: relative;
-    font-family: 'Open Sans', "IBM Plex Sans", Arial, sans-serif; /*font73468 = Trade Gothic LT*/
+    font-family: 'Open Sans', "IBM Plex Sans", Arial, sans-serif;
     font-size: 1.3rem;
     letter-spacing: -1px;
     text-decoration: none;
@@ -606,7 +606,123 @@ header {
     }
 }
 
+/**Begin GUACAMOLE SLIDE SECTION**/
 
+
+/**End GUACAMOLE SLIDE SECTION**/
+/**Begin CARD SECTION TWO**/
+.gridCardContainer_bottom {
+    padding: 2em;
+    display:grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 2em;
+    justify-content: center;
+}
+
+.gridCard {
+    display: flex;
+    flex-flow: column nowrap;
+    border: solid 1px #D4CBC7;
+}
+
+.gridCard_img {
+    width: 100%;
+    height: 200px;
+    max-height: 200px;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.gridCard_img h2 {
+    position: relative;
+    width: max-content;
+    font-family: 'Open Sans', "IBM Plex Sans", Arial, sans-serif;
+    font-size: 2.5rem;
+    top: 30%;
+    margin: auto;
+    text-shadow: 0px 1px 1px #451400;
+}
+
+.gridCard_img--gifts {
+    background-image: url(./Chipotle-Clone-Images/chip_giftandgear.jpg);
+}
+
+.gridCard_img--fundraising {
+    background-image: url(./Chipotle-Clone-Images/fundraising.jpg);
+}
+
+.gridCard_text {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.gridCard_text_info > p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 1em;
+    margin-bottom: 3em;
+}
+
+.gridCard_text_button {
+    display: block;
+    height: 35px;
+    width: 70%;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    background-image: linear-gradient(to right, black 50%, #451400 50%);
+    background-position: right bottom;
+    background-size: 200% 100%; 
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.gridCard_text_button:hover {
+    transition: all 0.2s;
+    background-position: left bottom;
+}
+
+.gridCard_text_button span { 
+    width: 100%; 
+    font-weight: bold;
+}
+
+.text--brown {
+    color: #451400;
+}
+
+.text--white {
+    color: white;
+}
+
+/**Media Queries CARD SECTION TWO**/
+@media screen and (max-width: 998px) {
+    .gridCard_img h2 { 
+        font-size: 2rem;
+    } 
+    
+    .gridCard_text_info > p {
+        font-size: 1rem;
+        margin-bottom: 2em;
+    }
+
+    .gridCard_text_button span { 
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+    .gridCardContainer_bottom {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 600px));
+        grid-row-gap: 2em;
+    }
+
+}
+/***End CARD SECTION TWO***/
 /***FOOTER large screen*/
 
 footer{
