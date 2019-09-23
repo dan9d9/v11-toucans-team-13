@@ -458,32 +458,24 @@ header {
     margin:0;
   }
 
-  .gridCardContainer img {
+  .gridCardContainer img, #responsiveCardContainer img{
     max-width: 100%;
     display: block;
     height: auto;
   }
 
-  .gridCardLeft{
+  .gridCardLeft, .gridCardRight{
       display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(50%,2fr));
+      grid-template-columns:repeat(auto-fit, minmax(50%,1fr));
       border:1px solid #D4CBC7;
-      
   }
-
-  .gridCardRight{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(50%,2fr));
-      border:1px solid #D4CBC7;
-    
-}
 
 .gridTextLeft{
     padding:3%;
     display:grid;
     grid-template-rows: 30%;
     align-items: center;
-}
+ }
 
 .cardBtn{
     padding:3%;
@@ -491,22 +483,129 @@ header {
     color:#FFFFFF;
     font-weight:bold;
     border:none; 
+ }
+
+.cardBtn:hover{
+    animation-name:changeColor;
+    animation:changeColor 1s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes changeColor{
+    0% {background-color:#451400;}
+    50%{background-color:black;}
+    100%{background-color:black;}
 }
 
 .cardTitle{
     color:#451400;
-    font-size: ;
-}
+    font-size: 1.8rem;
+ }
 
 .cardText{
     color:#451400;
-}
+ }
 
 .border{
     border:1px solid black;
+ }
+
+ #responsiveCardContainer{
+    display:none;
+}
+
+/***CARD SECTION ONE medium and small screen***/
+
+@media screen and (max-width:938px){
+    .gridCardContainer{
+        grid-template-columns: repeat(auto-fit,minmax(85%,85%));
+        grid-row-gap:2em;
+    }
+
+}
+
+@media screen and (max-width:619px){
+    .gridCardContainer{
+        display:none;
+    }
+
+    .responsiveCardLeft, .responsiveCardRight{
+        border:1px solid #D4CBC7;
+    }
+
+    #responsiveCardContainer{
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+        grid-gap: 2% 4%;
+        margin: 7%;
+    }
+
+    #responsiveCardContainer img{
+        max-width:100%;
+        max-height:100%;
+        object-fit:contain;
+    }
+
+    .cardText, .cardTitle{
+        padding:2%;
+    }
+
+    .cardBtn{
+        margin-inline-start: 37%;
+        margin-bottom: 2%
+
+    }
+
 }
 
 /**End of CARD SECTION ONE**/
+  /***DROPDOWNSECTION medium screen***/
+
+@media screen and (max-width:826px){
+    .dropText{
+        font-size:1.6em;
+        margin-left:3%;
+    }
+} 
+
+@media screen and (max-width:700px){
+    .dropText{
+        font-size:2.8em;
+        margin-left:3%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .dropText{
+        font-size:2.4em;
+        margin-left:3%;
+    }
+}
+
+
+  /***DROPSOWNSECTION small screen***/
+
+@media screen and (max-width:510px){
+    .dropText{
+        font-size:2em;
+        margin-left:3%;
+    }
+}
+
+@media screen and (max-width:428px){
+    .dropText{
+        font-size:1.7em;
+        margin-left:3%;
+    }
+}
+
+@media screen and (max-width:400px){
+    .dropText{
+        font-size:1.5em;
+        margin-left:3%;
+    }
+}
+
 /**Begin GUACAMOLE SLIDE SECTION**/
 
 
