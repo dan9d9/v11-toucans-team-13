@@ -74,22 +74,36 @@ select.style.borderBottom = "3px solid #451400";
 // GUACAMOLE SLIDESHOW
 let slideIndex = 0;
 
+function slideText(e) {
+    const text = this.querySelector('.slides-text');
+    
+    if(e.animationName !== 'slide-in') { return }; //ignore if it's not slide-in animation
+
+    text.style.display = 'block';
+}
+
 function slideChange() {
-    const slides = document.getElementsByClassName('slides');
+    const slides = document.querySelectorAll('.slides');
+    const texts = document.querySelectorAll('.slides-text')
     
     slideIndex++;
 
     if(slideIndex >= slides.length) {slideIndex = 0;};
 
-    for(let i=0; i<slides.length;i++){
-        slides[i].style.display = 'none';
-    }
+    slides.forEach(slide => {   //reset images to display:none
+        slide.style.display = 'none';
+        slide.addEventListener('animationend', slideText);
+    })
 
+    texts.forEach(text => text.style.display = 'none'); //reset text to display:none
+        
     slides[slideIndex].style.display = 'block';
 }
 
 slideChange();
-// setInterval(slideChange, 4000)
+setInterval(slideChange, 5000)
+
+
 
 // Start animation when scrolled into view (not working correctly, need to change)
 

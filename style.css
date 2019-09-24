@@ -451,6 +451,7 @@ header {
       grid-template-columns:repeat(auto-fit, minmax(45%,1fr));
       grid-column-gap: 2em;
       justify-content: center;
+      margin-bottom: 2em;
   }
 
   .gridCardContainer figure{
@@ -617,12 +618,10 @@ header {
     margin-bottom: 1em;
     font-family: 'Open Sans', "IBM Plex Sans", Arial, sans-serif;
 
-    outline: solid gold;
 }
 
 .guacamole-title > h2 {
-    font-size: 4rem;   
-    
+    font-size: 4rem;       
 }
 
 .guacamole-title > h3 {
@@ -634,19 +633,20 @@ header {
     position: relative;
     max-width: 700px;
     margin: auto;
-    /* padding: 1em; */
     z-index: -1;
     margin-bottom: 4em;
 
-    outline: solid red;
 }
 
 .slides-text {
     position: absolute;
     width: 100%;
-    /* bottom: 10px; */
     text-align: center;
+    font-size: 1.1rem;
     color: #451400;
+    display: none;      /*modified with JS*/
+    animation: fade 1s 1;
+    -webkit-animation: fade 1s 1;
 }
 
 .slides {
@@ -659,20 +659,7 @@ header {
     -webkit-animation: slide-in 1.5s 1, fade 1.5s 1;
 
 
-    /* outline: solid blue; */
 }
-
-/* .slides::before {
-    content: '';
-    position: absolute;
-    background: white;
-    height: 350px;
-    max-width: 500px;
-    left: 200px;
-    z-index: 999;
-
-    outline: dashed green;
-} */
 
 .slides > img {
     position: relative;
