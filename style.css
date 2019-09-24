@@ -607,9 +607,70 @@ header {
 }
 
 /**Begin GUACAMOLE SLIDE SECTION**/
-.slides > img {
-    /* max-width: 600px; */
+.slideshow_container {
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+    padding: 1em;
+    z-index: -1;
+
+    /* outline: solid red; */
 }
+
+.slides {
+    position: relative;
+    margin: auto;
+    height: 350px;
+    max-width: 500px;
+    display: none;  /* modified with JS */
+    animation: slide-in 1.5s 1, fade 1.5s 1;
+    -webkit-animation: slide-in 1.5s 1, fade 1.5s 1;
+
+
+    /* outline: solid blue; */
+}
+
+/* .slides::before {
+    content: '';
+    position: absolute;
+    background: white;
+    height: 350px;
+    max-width: 500px;
+    left: 200px;
+    z-index: 999;
+
+    outline: dashed green;
+} */
+
+.slides > img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+
+}
+
+@-webkit-keyframes slide-in {
+    from { left: 200px;}
+    to {left: 0px;}
+}
+
+@keyframes slide-in {
+    from { left: 200px;}
+    to {left: 0px;}
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
 
 /**End GUACAMOLE SLIDE SECTION**/
 /**Begin CARD SECTION TWO**/

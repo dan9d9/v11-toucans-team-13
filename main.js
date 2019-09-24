@@ -71,3 +71,24 @@ var select = document.querySelector('select');
 select.style.borderBottom = "3px solid #451400";
 
 
+// GUACAMOLE SLIDESHOW
+let slideIndex = 0;
+
+function slideChange() {
+    const slides = document.getElementsByClassName('slides');
+    
+    slideIndex++;
+    console.log(slideIndex);
+
+    if(slideIndex >= slides.length) {slideIndex = 0;};
+
+    for(let i=0; i<slides.length;i++){
+        slides[i].style.display = 'none';
+    }
+    slides[slideIndex].style.display = 'block';
+}
+
+// setInterval(slideChange, 5000);
+slideChange(); 
+
+
