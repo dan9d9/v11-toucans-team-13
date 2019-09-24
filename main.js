@@ -78,17 +78,31 @@ function slideChange() {
     const slides = document.getElementsByClassName('slides');
     
     slideIndex++;
-    console.log(slideIndex);
 
     if(slideIndex >= slides.length) {slideIndex = 0;};
 
     for(let i=0; i<slides.length;i++){
         slides[i].style.display = 'none';
     }
+
     slides[slideIndex].style.display = 'block';
 }
 
-// setInterval(slideChange, 5000);
-slideChange(); 
+slideChange();
+// setInterval(slideChange, 4000)
+
+// Start animation when scrolled into view (not working correctly, need to change)
+
+// function checkPosition() {
+//     const guac = document.getElementById('guacamole');
+
+//     let pos = guac.getBoundingClientRect().top
+
+//     if(window.innerHeight - pos <= 100) {
+//         setInterval(slideChange, 4000);
+//     }
+// }
+
+// window.addEventListener('scroll', checkPosition)
 
 

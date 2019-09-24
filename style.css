@@ -607,14 +607,46 @@ header {
 }
 
 /**Begin GUACAMOLE SLIDE SECTION**/
+.guacamole-title {
+    width: 100%;
+    text-align: center;
+    color: #451400;
+    letter-spacing: -3px;
+    line-height: 0.8;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-family: 'Open Sans', "IBM Plex Sans", Arial, sans-serif;
+
+    outline: solid gold;
+}
+
+.guacamole-title > h2 {
+    font-size: 4rem;   
+    
+}
+
+.guacamole-title > h3 {
+    font-size: 2rem;
+    font-style: italic;
+}
+
 .slideshow_container {
     position: relative;
     max-width: 700px;
     margin: auto;
-    padding: 1em;
+    /* padding: 1em; */
     z-index: -1;
+    margin-bottom: 4em;
 
-    /* outline: solid red; */
+    outline: solid red;
+}
+
+.slides-text {
+    position: absolute;
+    width: 100%;
+    /* bottom: 10px; */
+    text-align: center;
+    color: #451400;
 }
 
 .slides {
@@ -721,6 +753,7 @@ header {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    z-index: -1;
 }
 
 .gridCard_text_info > p {
