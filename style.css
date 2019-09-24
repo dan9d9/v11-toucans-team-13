@@ -607,7 +607,9 @@ header {
 }
 
 /**Begin GUACAMOLE SLIDE SECTION**/
-
+.slides > img {
+    /* max-width: 600px; */
+}
 
 /**End GUACAMOLE SLIDE SECTION**/
 /**Begin CARD SECTION TWO**/
