@@ -772,6 +772,13 @@ input{
     border-bottom: 2px solid white;
   }
 
+  @media screen and (max-width: 912px) {
+    .loupe{
+      border-bottom:none;
+    }
+  
+  }
+
 /***FOOTER large screen*/
 
 footer{
