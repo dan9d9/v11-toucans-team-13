@@ -733,7 +733,12 @@ header {
     background-color:#786259;
   }
 
-  
+input{
+    background:transparent;
+    border:none;
+    font-size:1.5vw;
+    color: #FFFFFF;
+  } 
 
 
 
