@@ -76,7 +76,7 @@ let slideIndex = 0;
 
 function slideText(e) {
     const slides = document.querySelectorAll('.slides');
-    const spans = document.querySelectorAll('.js-values_text1');  
+    const spans = document.querySelectorAll('.js-values_text1-span');  
     
     if(e.animationName !== 'slide-in') { return }; //ignore if it's not slide-in animation
 
@@ -84,6 +84,9 @@ function slideText(e) {
         if(this == slides[i]){
             spans[i].style.color = '#ad2118';
             spans[i].style.textDecoration = 'underline';
+            setTimeout(function(){
+                    slides[i].classList.add('slide_fade-out');    
+                }, 2300)
         }   
     }
 
@@ -91,13 +94,14 @@ function slideText(e) {
 
 function slideChange() {
     const slides = document.querySelectorAll('.slides');
-    const spans = document.querySelectorAll('.js-values_text1');
+    const spans = document.querySelectorAll('.js-values_text1-span');
     
     if(slideIndex >= slides.length) {slideIndex = 0;};
     
     slides.forEach(slide => {   // reset images display, and add event listener
         slide.style.display = 'none';
         slide.addEventListener('animationend', slideText);
+        slide.classList.remove('slide_fade-out');
     })
     
     spans.forEach(span => {     // reset color and text-decoration
@@ -109,7 +113,7 @@ function slideChange() {
 
     slideIndex++;
 
-    setTimeout(slideChange, 5000);
+    setTimeout(slideChange, 5100);
 }
 
 slideChange();
