@@ -786,6 +786,14 @@ input{
     .labelTitle{
         font-size:6vw;
     }
+
+    input{
+        font-size:6vw;
+    }
+
+    .flexContainer{
+        margin-left:none;
+    }
   }
 
     
