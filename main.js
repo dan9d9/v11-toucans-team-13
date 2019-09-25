@@ -71,6 +71,69 @@ var select = document.querySelector('select');
 select.style.borderBottom = "3px solid #451400";
 
 
+// GUACAMOLE SLIDESHOW
+let slideIndex = 0;
+
+function slideText(e) {
+    const slides = document.querySelectorAll('.slides');
+    const spans = document.querySelectorAll('.js-values_text1-span');  
+    
+    if(e.animationName !== 'slide-in') { return }; //ignore if it's not slide-in animation
+
+    for(let i=0; i<slides.length; i++){
+        if(this == slides[i]){
+            spans[i].style.color = '#ad2118';
+            spans[i].style.textDecoration = 'underline';
+            setTimeout(function(){
+                    slides[i].classList.add('slide_fade-out');    
+                }, 2300)
+        }   
+    }
+
+}
+
+function slideChange() {
+    const slides = document.querySelectorAll('.slides');
+    const spans = document.querySelectorAll('.js-values_text1-span');
+    
+    if(slideIndex >= slides.length) {slideIndex = 0;};
+    
+    slides.forEach(slide => {   // reset images display, and add event listener
+        slide.style.display = 'none';
+        slide.addEventListener('animationend', slideText);
+        slide.classList.remove('slide_fade-out');
+    })
+    
+    spans.forEach(span => {     // reset color and text-decoration
+        span.style.color = '#451400';
+        span.style.textDecoration = '';
+    })
+    
+    slides[slideIndex].style.display = 'block';
+
+    slideIndex++;
+
+    setTimeout(slideChange, 5100);
+}
+
+slideChange();
+
+
+// Start animation when scrolled into view (not working correctly, need to change)
+
+// function checkPosition() {
+//     const guac = document.getElementById('guacamole');
+
+//     let pos = guac.getBoundingClientRect().top
+
+//     if(window.innerHeight - pos <= 100) {
+//         setInterval(slideChange, 4000);
+//     }
+// }
+
+// window.addEventListener('scroll', checkPosition)
+
+
 //FIND A CHIPOTLE SECTION
 
 var borderLine = document.querySelector('.whiteLine');
