@@ -841,6 +841,78 @@ header {
 
 }
 /***End CARD SECTION TWO***/
+
+/***FIND A CHIPOTLE SECTION large screen***/
+
+.bgColor{
+    background-color:#786259;
+  }
+
+input{
+    background:transparent;
+    border:none;
+    font-size:1.5vw;
+    color: #FFFFFF;
+  } 
+
+.map{
+    max-width:10%;
+    height:auto
+  }
+
+.flexContainer{
+    padding:1%;
+    margin-left:15%;
+    display:inline-flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
+  }  
+
+.labelTitle{
+    font-size:1.7vw;
+    color:#FFFFFF;
+    font-weight:bold;
+    word-spacing:.5rem;
+    padding-right:5px;
+  }
+
+.loupe{
+    background-color:transparent;
+    border:none;
+    color:#FFFFFF;
+    cursor:pointer;
+ }
+
+
+ @media screen and (max-width:767px){
+    .map{
+      display:none;
+    }
+
+    .labelTitle{
+        font-size:3vw;
+    }
+
+  }
+
+  @media screen and (max-width:500px){
+    .labelTitle{
+        font-size:6vw;
+    }
+
+    input{
+        font-size:6vw;
+    }
+
+    .flexContainer{
+        margin-left:0%;
+    }
+  }
+
+    
+
 /***FOOTER large screen*/
 
 footer{
