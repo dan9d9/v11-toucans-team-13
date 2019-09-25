@@ -75,34 +75,44 @@ select.style.borderBottom = "3px solid #451400";
 let slideIndex = 0;
 
 function slideText(e) {
-    const text = this.querySelector('.slides-text');
+    const slides = document.querySelectorAll('.slides');
+    const spans = document.querySelectorAll('.js-values_text1');  
     
     if(e.animationName !== 'slide-in') { return }; //ignore if it's not slide-in animation
 
-    text.style.display = 'block';
+    for(let i=0; i<slides.length; i++){
+        if(this == slides[i]){
+            spans[i].style.color = '#ad2118';
+            spans[i].style.textDecoration = 'underline';
+        }   
+    }
+
 }
 
 function slideChange() {
     const slides = document.querySelectorAll('.slides');
-    const texts = document.querySelectorAll('.slides-text')
+    const spans = document.querySelectorAll('.js-values_text1');
     
-    slideIndex++;
-
     if(slideIndex >= slides.length) {slideIndex = 0;};
-
-    slides.forEach(slide => {   //reset images to display:none
+    
+    slides.forEach(slide => {   // reset images display, and add event listener
         slide.style.display = 'none';
         slide.addEventListener('animationend', slideText);
     })
-
-    texts.forEach(text => text.style.display = 'none'); //reset text to display:none
-        
+    
+    spans.forEach(span => {     // reset color and text-decoration
+        span.style.color = '#451400';
+        span.style.textDecoration = '';
+    })
+    
     slides[slideIndex].style.display = 'block';
+
+    slideIndex++;
+
+    setTimeout(slideChange, 5000);
 }
 
 slideChange();
-setInterval(slideChange, 5000)
-
 
 
 // Start animation when scrolled into view (not working correctly, need to change)

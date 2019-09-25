@@ -1,6 +1,7 @@
 
 html {
     font-size: 100%;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -620,7 +621,6 @@ header {
     padding: 1em;
     margin-bottom: 1em;
     font-family: 'Open Sans', "IBM Plex Sans", Arial, sans-serif;
-
 }
 
 .guacamole-title > h2 {
@@ -637,8 +637,7 @@ header {
     max-width: 700px;
     margin: auto;
     z-index: -1;
-    margin-bottom: 6em;
-
+    margin-bottom: 2em;
 }
 
 .slides-text {
@@ -660,8 +659,6 @@ header {
     display: none;  /* modified with JS */
     animation: slide-in 1.5s 1, fade 1.5s 1;
     -webkit-animation: slide-in 1.5s 1, fade 1.5s 1;
-
-
 }
 
 .slides > img {
@@ -670,7 +667,6 @@ header {
     width: 100%;
     border: none;
     border-radius: 50px;
-
 }
 
 /* Slide Animations */
@@ -701,9 +697,17 @@ header {
     width: 100%;
 }
 
-.values_text {
+.values_text1 {
+    width: 90%;
+    text-align: center;
     color: #451400;
     margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.values_text2 {
+    color: #451400;
+    margin-bottom: 2em;
 }
 
 .values_button {
@@ -728,6 +732,7 @@ header {
 
 /**End GUACAMOLE SLIDE SECTION**/
 /**Begin CARD SECTION TWO**/
+
 .gridCardContainer_bottom {
     padding: 2em;
     display:grid;
