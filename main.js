@@ -71,3 +71,7 @@ var select = document.querySelector('select');
 select.style.borderBottom = "3px solid #451400";
 
 
+//FIND A CHIPOTLE SECTION
+
+var borderLine = document.querySelector('.whiteLine');
+borderLine.style.borderBottom = "2px solid #FFFFFF";
