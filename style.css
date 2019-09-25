@@ -634,7 +634,7 @@ header {
     max-width: 700px;
     margin: auto;
     z-index: -1;
-    margin-bottom: 6em;
+    margin-bottom: 2em;
 
 }
 
@@ -698,9 +698,17 @@ header {
     width: 100%;
 }
 
-.values_text {
+.values_text1 {
+    width: 90%;
+    text-align: center;
     color: #451400;
     margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.values_text2 {
+    color: #451400;
+    margin-bottom: 2em;
 }
 
 .values_button {

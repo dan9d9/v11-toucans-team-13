@@ -75,27 +75,52 @@ select.style.borderBottom = "3px solid #451400";
 let slideIndex = 0;
 
 function slideText(e) {
-    const text = this.querySelector('.slides-text');
+    // const slides = document.querySelectorAll('.slides');
+    // const spans = document.querySelectorAll('.js-values_text1');
+    const slide1 = document.querySelector('.slide1');
+    const slide2 = document.querySelector('.slide2');
+    const slide3 = document.querySelector('.slide3');
+    const span1 = document.querySelector('.span1');
+    const span2 = document.querySelector('.span2');
+    const span3 = document.querySelector('.span3');
+    
     
     if(e.animationName !== 'slide-in') { return }; //ignore if it's not slide-in animation
 
-    text.style.display = 'block';
+    switch(this) {
+       case slide1:
+            span1.style.color = '#ad2118';
+            span1.style.textDecoration = 'underline';
+            break;
+        case slide2:
+            span2.style.color = '#ad2118';
+            span2.style.textDecoration = 'underline';
+            break;
+        case slide3:
+            span3.style.color = '#ad2118';
+            span3.style.textDecoration = 'underline';
+            break;
+   }
+  
 }
 
 function slideChange() {
     const slides = document.querySelectorAll('.slides');
-    const texts = document.querySelectorAll('.slides-text')
+    const spans = document.querySelectorAll('.js-values_text1');
     
     slideIndex++;
 
     if(slideIndex >= slides.length) {slideIndex = 0;};
 
-    slides.forEach(slide => {   //reset images to display:none
+    slides.forEach(slide => {   // reset images display, and add event listener
         slide.style.display = 'none';
         slide.addEventListener('animationend', slideText);
     })
 
-    texts.forEach(text => text.style.display = 'none'); //reset text to display:none
+    spans.forEach(span => {     // reset color and text-decoration
+        span.style.color = '#451400';
+        span.style.textDecoration = '';
+        })
         
     slides[slideIndex].style.display = 'block';
 }
