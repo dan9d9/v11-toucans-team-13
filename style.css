@@ -755,6 +755,14 @@ input{
     align-items:center;
   }  
 
+.labelTitle{
+    font-size:2vw;
+    color:#FFFFFF;
+    font-weight:bold;
+    word-spacing:.5rem;
+    padding-right:5px;
+  }
+
 
 
 /***FOOTER large screen*/
