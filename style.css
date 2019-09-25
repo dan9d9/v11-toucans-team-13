@@ -409,6 +409,7 @@ header {
     
 }
 
+/*****END HERO SECTION*****/
 /***DROPDOWNSECTION large screen***/
 
 #dropDownSection{
@@ -443,6 +444,54 @@ header {
 
   }
 
+  /***DROPDOWNSECTION medium screen***/
+  
+  @media screen and (max-width:826px){
+    .dropText{
+        font-size:1.6em;
+        margin-left:3%;
+    }
+  } 
+  
+  @media screen and (max-width:700px){
+    .dropText{
+        font-size:2.8em;
+        margin-left:3%;
+    }
+  }
+  
+  @media screen and (max-width:600px){
+    .dropText{
+        font-size:2.4em;
+        margin-left:3%;
+    }
+  }
+  
+  
+  /***DROPSOWNSECTION small screen***/
+  
+  @media screen and (max-width:510px){
+    .dropText{
+        font-size:2em;
+        margin-left:3%;
+    }
+  }
+  
+  @media screen and (max-width:428px){
+    .dropText{
+        font-size:1.7em;
+        margin-left:3%;
+    }
+  }
+  
+  @media screen and (max-width:400px){
+    .dropText{
+        font-size:1.5em;
+        margin-left:3%;
+    }
+  }
+
+  /*****END DROPDOWN SECTION*****/
   /***CARD SECTION ONE large screen***/
 
   .gridCardContainer{
@@ -560,52 +609,6 @@ header {
 }
 
 /**End of CARD SECTION ONE**/
-  /***DROPDOWNSECTION medium screen***/
-
-@media screen and (max-width:826px){
-    .dropText{
-        font-size:1.6em;
-        margin-left:3%;
-    }
-} 
-
-@media screen and (max-width:700px){
-    .dropText{
-        font-size:2.8em;
-        margin-left:3%;
-    }
-}
-
-@media screen and (max-width:600px){
-    .dropText{
-        font-size:2.4em;
-        margin-left:3%;
-    }
-}
-
-
-  /***DROPSOWNSECTION small screen***/
-
-@media screen and (max-width:510px){
-    .dropText{
-        font-size:2em;
-        margin-left:3%;
-    }
-}
-
-@media screen and (max-width:428px){
-    .dropText{
-        font-size:1.7em;
-        margin-left:3%;
-    }
-}
-
-@media screen and (max-width:400px){
-    .dropText{
-        font-size:1.5em;
-        margin-left:3%;
-    }
-}
 
 /**Begin GUACAMOLE SLIDE SECTION**/
 .guacamole-title {
@@ -846,54 +849,6 @@ header {
 
 }
 /***End CARD SECTION TWO***/
-  /***DROPDOWNSECTION medium screen***/
-
-@media screen and (max-width:826px){
-    .dropText{
-        font-size:1.6em;
-        margin-left:3%;
-    }
-} 
-
-@media screen and (max-width:700px){
-    .dropText{
-        font-size:2.8em;
-        margin-left:3%;
-    }
-}
-
-@media screen and (max-width:600px){
-    .dropText{
-        font-size:2.4em;
-        margin-left:3%;
-    }
-}
-
-
-  /***DROPSOWNSECTION small screen***/
-
-@media screen and (max-width:510px){
-    .dropText{
-        font-size:2em;
-        margin-left:3%;
-    }
-}
-
-@media screen and (max-width:428px){
-    .dropText{
-        font-size:1.7em;
-        margin-left:3%;
-    }
-}
-
-@media screen and (max-width:400px){
-    .dropText{
-        font-size:1.5em;
-        margin-left:3%;
-    }
-}
-
-
 /***FOOTER large screen*/
 
 footer{
