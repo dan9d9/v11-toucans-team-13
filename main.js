@@ -130,3 +130,7 @@ slideChange();
 // window.addEventListener('scroll', checkPosition)
 
 
+//FIND A CHIPOTLE SECTION
+
+var borderLine = document.querySelector('.whiteLine');
+borderLine.style.borderBottom = "2px solid #FFFFFF";
