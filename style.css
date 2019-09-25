@@ -645,8 +645,8 @@ header {
     width: 100%;
     text-align: center;
     font-size: 1.2rem;
-    color: #451400;
-    display: none;      /*modified with JS*/
+    color: #451400; /*modified with JS*/
+    display: none;      
     animation: fade 1s 1;
     -webkit-animation: fade 1s 1;
 }
@@ -753,6 +753,36 @@ header {
     width: 100%;
     color: #451400;
     font-weight: bold;
+}
+
+/*Guacamole MEDIA QUERIES*/
+@media screen and (max-width: 768px){
+    .guacamole-title > h2 {
+        font-size: 4rem;       
+    }
+    
+    .guacamole-title > h3 {
+        font-size: 2rem;
+    }
+
+    .slides {
+        height: 200px;
+        max-width: 300px;
+    }
+
+    .values_container {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .guacamole-title > h2 {
+        font-size: 3rem;       
+    }
+    
+    .guacamole-title > h3 {
+        font-size: 1.5rem;
+    }
 }
 
 
