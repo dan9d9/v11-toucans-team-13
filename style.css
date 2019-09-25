@@ -679,15 +679,41 @@ header {
     from { left: 200px;}
     to {left: 0px;}
 }
-  
+
+
 @-webkit-keyframes fade {
     from {opacity: 0} 
     to {opacity: 1}
 }
-  
+
 @keyframes fade {
     from {opacity: 0} 
     to {opacity: 1}
+}
+
+.slide_fade-out {    /* JS added */
+    animation: slide-out 1.5s 1, fade-out 1.5s 1;
+    -webkit-animation: slide-out 1.5s 1, fade-out 1.5s 1;
+}
+
+@-webkit-keyframes slide-out {
+    from { left: 0px;}
+    to {left: -200px;}
+}
+
+@keyframes slide-out {
+    from { left: 0px;}
+    to {left: -200px;}
+}
+
+@-webkit-keyframes fade-out {
+    from { opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes fade-out {
+    from { opacity: 1;}
+    to {opacity: 0;}
 }
 
 .values_container {
