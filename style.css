@@ -768,6 +768,8 @@ input{
     border:none;
     color:#FFFFFF;
     cursor:pointer;
+    margin-left: -6px;
+    border-bottom: 2px solid white;
   }
 
 /***FOOTER large screen*/
