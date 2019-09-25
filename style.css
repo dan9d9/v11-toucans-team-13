@@ -745,7 +745,17 @@ input{
     height:auto
   }
 
-  
+.flexContainer{
+    padding:1%;
+    margin-left:15%;
+    display:inline-flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
+  }  
+
+
 
 /***FOOTER large screen*/
 
