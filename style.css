@@ -621,11 +621,11 @@ header {
 }
 
 .guacamole-title > h2 {
-    font-size: 4rem;       
+    font-size: 5rem;       
 }
 
 .guacamole-title > h3 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-style: italic;
 }
 
@@ -642,7 +642,7 @@ header {
     position: absolute;
     width: 100%;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #451400;
     display: none;      /*modified with JS*/
     animation: fade 1s 1;
@@ -652,8 +652,8 @@ header {
 .slides {
     position: relative;
     margin: auto;
-    height: 350px;
-    max-width: 500px;
+    height: 400px;
+    max-width: 600px;
     display: none;  /* modified with JS */
     animation: slide-in 1.5s 1, fade 1.5s 1;
     -webkit-animation: slide-in 1.5s 1, fade 1.5s 1;
@@ -670,6 +670,7 @@ header {
 
 }
 
+/* Animations */
 @-webkit-keyframes slide-in {
     from { left: 200px;}
     to {left: 0px;}
