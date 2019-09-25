@@ -775,6 +775,10 @@ input{
     .map{
       display:none;
     }
+
+    .labelTitle{
+        font-size:3vw;
+    }
   }
     
 
