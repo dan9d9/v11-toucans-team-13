@@ -740,8 +740,12 @@ input{
     color: #FFFFFF;
   } 
 
+.map{
+    max-width:10%;
+    height:auto
+  }
 
-
+  
 
 /***FOOTER large screen*/
 
