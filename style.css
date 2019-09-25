@@ -763,7 +763,12 @@ input{
     padding-right:5px;
   }
 
-
+.loupe{
+    background-color:transparent;
+    border:none;
+    color:#FFFFFF;
+    cursor:pointer;
+  }
 
 /***FOOTER large screen*/
 
