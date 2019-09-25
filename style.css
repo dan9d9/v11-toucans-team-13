@@ -779,7 +779,15 @@ input{
     .labelTitle{
         font-size:3vw;
     }
+
   }
+
+  @media screen and (max-width:500px){
+    .labelTitle{
+        font-size:6vw;
+    }
+  }
+
     
 
 /***FOOTER large screen*/
