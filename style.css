@@ -614,6 +614,10 @@ header {
 /**End of CARD SECTION ONE**/
 
 /**Begin GUACAMOLE SLIDE SECTION**/
+#guacamole {
+    overflow: hidden;
+}
+
 .guacamole-title {
     width: 100%;
     text-align: center;
