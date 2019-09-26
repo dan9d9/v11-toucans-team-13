@@ -334,7 +334,7 @@ header {
 
 @media screen and (max-width: 800px) {
     .heroSection {
-        background-size: contain;
+        background-position-x: right;
     }
     
     .heroSection_titleContainer {
