@@ -265,8 +265,6 @@ header {
     display: flex;
     flex-flow: column nowrap;
     margin-top: 10em;
-    
-    /* outline: solid gold; */
 }
 
 .heroSection_titleContainer h3 {
@@ -277,8 +275,6 @@ header {
     letter-spacing: 1.15px;
     background: #451400;
     color: white;
-
-    /* outline: solid green; */
 }
 
 .heroSection_titleContainer h1 {
@@ -289,9 +285,6 @@ header {
     line-height: 1.1;
     color: #ad2118;
     background: rgba(241, 241, 241, 0.8);
-
-
-    /* outline: solid blue; */
 }
 
 .heroSection_orderContainer {
@@ -302,13 +295,11 @@ header {
     font-size: 1.3rem;
     text-align: center;
     font-weight: bold;
-    /* outline: solid red; */
 }
 
 .orderContainer_description {
     background: #ad2118;
     padding: 0.5em 1.5em;
-    /* outline: dotted black; */
 }
 
 .description--small {
@@ -322,7 +313,6 @@ header {
     background-position: right bottom;
     background-size: 200% 100%;
     transition: all 0.2s;
-    /* outline: dotted gold; */
 }
 
 .orderContainer_button:hover {
@@ -337,7 +327,7 @@ header {
 /*Media Queries Hero Section*/
 @media screen and (min-height: 800px) {
     .heroSection {
-        height: 50vh;
+        height: 60vh;
     }
 }
 
@@ -345,11 +335,11 @@ header {
     .heroSection {
         background-size: contain;
     }
-
+    
     .heroSection_titleContainer {
         margin-top: 8em;
     }
-
+    
     .heroSection_titleContainer h3 {
         font-size: 1.1rem;
     }
@@ -357,12 +347,12 @@ header {
     .heroSection_titleContainer h1 {
         font-size: 3rem;
     }
-
+    
     .heroSection_orderContainer {
         font-size: 1rem;
         margin-bottom: 5em;
     }
-
+    
     .fi-xwlrxl-arrow-simple-wide {  /*Friconix arrow icon*/
         font-size: 1.1rem;
     }
@@ -373,7 +363,7 @@ header {
         background-size: auto;
         background-position: initial;
     }
-
+    
     .heroSection_titleContainer h3 {
         font-size: 0.9rem;
     }
@@ -381,15 +371,15 @@ header {
     .heroSection_titleContainer h1 {
         font-size: 2rem;
     }
-
+    
     .heroSection_orderContainer {
         font-size: 0.9rem;
     }
-
+    
     .orderContainer_description, .orderContainer_button {
         padding: 0.5em;
     }
-
+    
     .fi-xwlrxl-arrow-simple-wide {  /*Friconix arrow icon*/
         font-size: 0.9rem;
     }
@@ -403,11 +393,21 @@ header {
     .description--large {
         display:none;
     }
-
+    
     .description--small {
         display: block;
     }
     
+}
+
+@media screen and (min-height: 800px) and (max-width: 800px) {
+    .heroSection {
+        background-size: cover;
+    }
+
+    .heroSection_titleContainer {
+        margin-top: 14em;
+    }
 }
 
 /*****END HERO SECTION*****/
@@ -419,7 +419,7 @@ header {
     justify-content: space-around;
     align-items:center; 
     align-content: center; 
-  }
+}
 
 .bgText{
     display: flex;
