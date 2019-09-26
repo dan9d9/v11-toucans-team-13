@@ -37,6 +37,7 @@ header {
     border-bottom: solid 1px rgba(0, 0, 0, 0.2);
     padding: 0.5em 1.5em;
     background: white;
+    z-index: 1;
 }
 
 .iconContainer {    /*contains hamburger menu and chipotle icon*/
@@ -810,7 +811,6 @@ header {
     background-position: center;
     background-size: cover;
     opacity: 0.9;
-    z-index: -1;
 }
 
 .gridCard_img h2 {
@@ -836,7 +836,6 @@ header {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    z-index: -1;
 }
 
 .gridCard_text_info > p {
