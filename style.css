@@ -153,6 +153,7 @@ header {
     background-color: white;
     overflow: auto;
     transition: all 0.08s;
+    z-index: 2;
 }
 
 .mobileNav_header {
