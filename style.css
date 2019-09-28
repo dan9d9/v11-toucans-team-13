@@ -1043,10 +1043,42 @@ footer li{
     margin: 2vmin;
 }
 
+
+
 .clone{
     margin-left: 4%;
     color:#FFFFFF;
 }
+
+/* Effects on About us: same word slide in */
+
+.wrapLinkEffect li {
+    overflow: hidden;
+    padding: 0 4px;
+    height: 1.6em;
+}
+
+.wrapLinkEffect a{
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.wrapLinkEffect a::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    font-weight: 599;
+    transform: translate3d(0,0,0);
+    background-color: #786259;
+}
+
+.wrapLinkEffect li:hover a,
+.wrapLinkEffect li:focus a {
+    transform: translateY(-100%);
+}
+
+/**End effect on About us**/
 
 /*FOOTER Medium screen*/
 
