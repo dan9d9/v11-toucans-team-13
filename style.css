@@ -1043,8 +1043,6 @@ footer li{
     margin: 2vmin;
 }
 
-
-
 .clone{
     margin-left: 4%;
     color:#FFFFFF;
@@ -1078,8 +1076,6 @@ footer li{
     transform: translateY(-100%);
 }
 
-/**End effect on About us**/
-
 /**Hover effect on social icons**/
 
 .socialIcon{
@@ -1088,6 +1084,20 @@ footer li{
    .socialIcon:hover {
    transform:scale(1.3);
    }
+
+/**Hover effect on app icons**/
+
+
+.wrapApp {
+    overflow:hidden;
+    }
+    .wrapApp:hover .app {
+    transform:scale(1);
+    }
+    .app {
+    transition: all 0.7s ease;
+    transform:scale(1.1);
+    }
 
 /*FOOTER Medium screen*/
 
