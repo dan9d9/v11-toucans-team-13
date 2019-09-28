@@ -1048,6 +1048,10 @@ footer li{
     color:#FFFFFF;
 }
 
+.clone a{
+    text-decoration: underline;
+}
+
 /* Effects on About us: same word slide in */
 
 .wrapLinkEffect li {
