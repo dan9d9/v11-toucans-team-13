@@ -1043,6 +1043,11 @@ footer li{
     margin: 2vmin;
 }
 
+.clone{
+    margin-left: 4%;
+    color:#FFFFFF;
+}
+
 /*FOOTER Medium screen*/
 
 @media (min-width: 664px) and (max-width: 1024px){
