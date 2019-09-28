@@ -1044,7 +1044,7 @@ footer li{
 }
 
 .clone{
-    margin-left: 4%;
+    margin-right: 7%;
     color:#FFFFFF;
 }
 
@@ -1116,6 +1116,11 @@ footer li{
     .downAppDiv{
          flex-flow:row wrap;
     }
+
+    .clone{
+        margin-left: 4%;
+    }
+    
 }
 
 /*  FOOTER Small screen */
@@ -1125,7 +1130,11 @@ footer li{
 
     .aboutDiv, .connectDiv{
         margin:2% 2%;
-
     }
+
+    .clone{
+        margin-left: 4%;
+    }
+    
 
 }
