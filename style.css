@@ -1043,6 +1043,66 @@ footer li{
     margin: 2vmin;
 }
 
+.clone{
+    margin-right: 7%;
+    color:#FFFFFF;
+}
+
+.clone a{
+    text-decoration: underline;
+}
+
+/* Effects on About us: same word slide in */
+
+.wrapLinkEffect li {
+    overflow: hidden;
+    padding: 0 4px;
+    height: 1.6em;
+}
+
+.wrapLinkEffect a{
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.wrapLinkEffect a::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    font-weight: 599;
+    transform: translate3d(0,0,0);
+    background-color: #786259;
+}
+
+.wrapLinkEffect li:hover a,
+.wrapLinkEffect li:focus a {
+    transform: translateY(-100%);
+}
+
+/**Hover effect on social icons**/
+
+.socialIcon{
+    transition: all 0.7s ease;
+   } 
+   .socialIcon:hover {
+   transform:scale(1.3);
+   }
+
+/**Hover effect on app icons**/
+
+
+.wrapApp {
+    overflow:hidden;
+    }
+    .wrapApp:hover .app {
+    transform:scale(1);
+    }
+    .app {
+    transition: all 0.7s ease;
+    transform:scale(1.1);
+    }
+
 /*FOOTER Medium screen*/
 
 @media (min-width: 664px) and (max-width: 1024px){
@@ -1060,6 +1120,7 @@ footer li{
     .downAppDiv{
          flex-flow:row wrap;
     }
+
 }
 
 /*  FOOTER Small screen */
@@ -1069,7 +1130,11 @@ footer li{
 
     .aboutDiv, .connectDiv{
         margin:2% 2%;
-
     }
+
+    .clone{
+        margin-left: 10%;
+    }
+    
 
 }

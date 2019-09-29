@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|IBM+Plex+Sans|Nunito&display=swap" rel="stylesheet"> 
         <script defer src="https://friconix.com/cdn/friconix.js"></script> <!--Friconix icons import-->
         <link type="text/css" rel="stylesheet" href="style.css"/>
+        <script src="js/modernizr.custom.js"></script>
     </head>
     <body>
         <header>
@@ -240,10 +241,10 @@
         <div class="footerContainer">
             <div class="aboutDiv">
                 <h2 class="footerTitle">About us</h2>
-                <ul>
-                    <li><a href="#" class="footerMenu">Our Values</a></li>
-                    <li><a href="#" class="footerMenu">News and Events</a></li>
-                    <li><a href="#" class="footerMenu">Contact Support</a></li>
+                <ul class="wrapLinkEffect">
+                    <li><a href="#" data-hover="Our Values" class="footerMenu">Our Values</a></li>
+                    <li><a href="#" data-hover="News and Events" class="footerMenu">News and Events</a></li>
+                    <li><a href="#" data-hover="Contact Support" class="footerMenu">Contact Support</a></li>
                 </ul>
             </div>
             <div class="connectDiv">
@@ -258,10 +259,11 @@
             <div class="downAppDiv">
             <h2 class="footerTitle">Download our app</h2>
             <div>
-                <a href="#"><img class="app" src="icons/apple-store.png"/></a>
-                <a href="#"><img class="app" src="icons/google-play.png"/></a>
+                <a class="wrapApp" href="#"><img class="app" src="icons/apple-store.png"/></a>
+                <a class="wrapApp" href="#"><img class="app" src="icons/google-play.png"/></a>
             </div>
             </div>
+            <div class="clone"><h5>This page is part of Chingu Voyage 11 project, a clone of <a href="https://www.chipotle.com" >www.chipotle.com </a>for learning purposes</h5></div>
         </div>
         </footer>
         <script type="text/javascript" src="main.js"></script>
