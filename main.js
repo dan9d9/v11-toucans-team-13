@@ -89,14 +89,11 @@ function slideText(e) {
                 }, 2300)
         }   
     }
-
 }
 
 function slideChange(n) {
     const slides = document.querySelectorAll('.slides');
-    const spans = document.querySelectorAll('.js-values_text1-span');
-    console.log('started');
-    
+    const spans = document.querySelectorAll('.js-values_text1-span');  
     
     if(n >= slides.length) {n = 0;};
     
@@ -120,43 +117,25 @@ function slideChange(n) {
     }, 5100);
 }
 
-// slideChange(0);
+// Start slide animation when scrolled into view
 
-
-// Start animation when scrolled into view (not working correctly, need to change)
-
-function checkPosition(bool) {
+function checkPosition() {
     const guac = document.getElementById('guacamole');
 
-    if(bool === true) {
-        return;
-    } else {
-        console.log('position?');
         let rect = guac.getBoundingClientRect();
         let rectTop = rect.top;
         let rectBottom = rect.bottom;
 
-        if(rectTop >= -110 && rectBottom <= 814) {
+        if(rectTop >= -110 && rectBottom <= 780) {
             slideChange(0);
+            window.removeEventListener('scroll', checkPosition);
+            window.removeEventListener('resize', checkPosition);
         }
     }       
-}    
 
+window.addEventListener('scroll', checkPosition);
+window.addEventListener('resize', checkPosition);
 
-// window.addEventListener('scroll', isSlideStarted);
-
-function isSlideStarted(e) {
-    console.log('e?: ', e);
-    if(e){
-        console.log('e true: ', e);
-        checkPosition(true);
-    } else{
-        console.log('e false: ', e);
-        checkPosition(false);}
-}
-
-const slides = document.querySelectorAll('.slides');
-slides.forEach(slide => slide.addEventListener('animationstart', isSlideStarted));
 
 
 //FIND A CHIPOTLE SECTION
