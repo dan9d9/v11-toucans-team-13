@@ -122,16 +122,16 @@ function slideChange(n) {
 function checkPosition() {
     const guac = document.getElementById('guacamole');
 
-        let rect = guac.getBoundingClientRect();
-        let rectTop = rect.top;
-        let rectBottom = rect.bottom;
+    let rect = guac.getBoundingClientRect();
+    let rectTop = rect.top;
+    let rectBottom = rect.bottom;
 
-        if(rectTop >= -110 && rectBottom <= 780) {
-            slideChange(0);
-            window.removeEventListener('scroll', checkPosition);
-            window.removeEventListener('resize', checkPosition);
-        }
-    }       
+    if(rectTop >= -110 && rectBottom <= 780) {
+        slideChange(0);
+        window.removeEventListener('scroll', checkPosition);
+        window.removeEventListener('resize', checkPosition);
+    }
+}       
 
 window.addEventListener('scroll', checkPosition);
 window.addEventListener('resize', checkPosition);
