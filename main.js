@@ -92,13 +92,15 @@ function slideText(e) {
 
 }
 
-function slideChange() {
+function slideChange(n) {
     const slides = document.querySelectorAll('.slides');
     const spans = document.querySelectorAll('.js-values_text1-span');
+    console.log('started');
     
-    if(slideIndex >= slides.length) {slideIndex = 0;};
     
-    slides.forEach(slide => {   // reset images display, and add event listener
+    if(n >= slides.length) {n = 0;};
+    
+    slides.forEach(slide => {   // reset images display, add event listener, remove exit animation
         slide.style.display = 'none';
         slide.addEventListener('animationend', slideText);
         slide.classList.remove('slide_fade-out');
@@ -109,29 +111,52 @@ function slideChange() {
         span.style.textDecoration = '';
     })
     
-    slides[slideIndex].style.display = 'block';
+    slides[n].style.display = 'block';
 
-    slideIndex++;
+    n++;
 
-    setTimeout(slideChange, 5100);
+    setTimeout(function() {
+        slideChange(n);
+    }, 5100);
 }
 
-slideChange();
+// slideChange(0);
 
 
 // Start animation when scrolled into view (not working correctly, need to change)
 
-// function checkPosition() {
-//     const guac = document.getElementById('guacamole');
+function checkPosition(bool) {
+    const guac = document.getElementById('guacamole');
 
-//     let pos = guac.getBoundingClientRect().top
+    if(bool === true) {
+        return;
+    } else {
+        console.log('position?');
+        let rect = guac.getBoundingClientRect();
+        let rectTop = rect.top;
+        let rectBottom = rect.bottom;
 
-//     if(window.innerHeight - pos <= 100) {
-//         setInterval(slideChange, 4000);
-//     }
-// }
+        if(rectTop >= -110 && rectBottom <= 814) {
+            slideChange(0);
+        }
+    }       
+}    
 
-// window.addEventListener('scroll', checkPosition)
+
+// window.addEventListener('scroll', isSlideStarted);
+
+function isSlideStarted(e) {
+    console.log('e?: ', e);
+    if(e){
+        console.log('e true: ', e);
+        checkPosition(true);
+    } else{
+        console.log('e false: ', e);
+        checkPosition(false);}
+}
+
+const slides = document.querySelectorAll('.slides');
+slides.forEach(slide => slide.addEventListener('animationstart', isSlideStarted));
 
 
 //FIND A CHIPOTLE SECTION
