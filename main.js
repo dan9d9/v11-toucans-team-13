@@ -89,16 +89,15 @@ function slideText(e) {
                 }, 2300)
         }   
     }
-
 }
 
-function slideChange() {
+function slideChange(n) {
     const slides = document.querySelectorAll('.slides');
-    const spans = document.querySelectorAll('.js-values_text1-span');
+    const spans = document.querySelectorAll('.js-values_text1-span');  
     
-    if(slideIndex >= slides.length) {slideIndex = 0;};
+    if(n >= slides.length) {n = 0;};
     
-    slides.forEach(slide => {   // reset images display, and add event listener
+    slides.forEach(slide => {   // reset images display, add event listener, remove exit animation
         slide.style.display = 'none';
         slide.addEventListener('animationend', slideText);
         slide.classList.remove('slide_fade-out');
@@ -109,29 +108,34 @@ function slideChange() {
         span.style.textDecoration = '';
     })
     
-    slides[slideIndex].style.display = 'block';
+    slides[n].style.display = 'block';
 
-    slideIndex++;
+    n++;
 
-    setTimeout(slideChange, 5100);
+    setTimeout(function() {
+        slideChange(n);
+    }, 5100);
 }
 
-slideChange();
+// Start slide animation when scrolled into view
 
+function checkPosition() {
+    const guac = document.getElementById('guacamole');
 
-// Start animation when scrolled into view (not working correctly, need to change)
+    let rect = guac.getBoundingClientRect();
+    let rectTop = rect.top;
+    let rectBottom = rect.bottom;
 
-// function checkPosition() {
-//     const guac = document.getElementById('guacamole');
+    if(rectTop >= -110 && rectBottom <= 780) {
+        slideChange(0);
+        window.removeEventListener('scroll', checkPosition);
+        window.removeEventListener('resize', checkPosition);
+    }
+}       
 
-//     let pos = guac.getBoundingClientRect().top
+window.addEventListener('scroll', checkPosition);
+window.addEventListener('resize', checkPosition);
 
-//     if(window.innerHeight - pos <= 100) {
-//         setInterval(slideChange, 4000);
-//     }
-// }
-
-// window.addEventListener('scroll', checkPosition)
 
 
 //FIND A CHIPOTLE SECTION
