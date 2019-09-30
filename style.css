@@ -530,18 +530,19 @@ header {
     background-color:#451400;
     color:#FFFFFF;
     font-weight:bold;
-    border:none; 
+    border:none;
+    cursor: pointer; 
  }
 
 .cardBtn:hover{
     animation-name:changeColor;
-    animation:changeColor 1s infinite;
+    animation:changeColor 0.2s;
     animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;  /*Maintains animation at 100% while hovered*/
 }
 
 @keyframes changeColor{
     0% {background-color:#451400;}
-    50%{background-color:black;}
     100%{background-color:black;}
 }
 
