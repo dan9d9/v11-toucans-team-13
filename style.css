@@ -584,8 +584,9 @@ header {
     #responsiveCardContainer{
         display:grid;
         grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
-        grid-gap: 2% 4%;
+        grid-gap: 4%;
         margin: 7%;
+        margin-bottom: 5em;
     }
 
     #responsiveCardContainer img{
@@ -599,7 +600,8 @@ header {
     }
 
     .cardBtn{
-        margin-inline-start: 37%;
+        display: block;
+        margin: auto;
         margin-bottom: 2%
     }
 }
