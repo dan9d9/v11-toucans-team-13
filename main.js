@@ -1,7 +1,5 @@
+// Hamburger Menu open & close //
 const hamburgerBtn = document.querySelector('.hamburger');
-
-
-// Hamburger Menu open/close
 
 function closeNav() {
     const mobileNav = document.getElementById('mobileNav');
@@ -10,7 +8,7 @@ function closeNav() {
     mobileNav.style.left = -100 + '%';
     mobileNav.style.top = 0;
     body.style.overflow = '';
-}
+};
 
 function openNav() { 
     const mobileNav = document.getElementById('mobileNav');
@@ -26,27 +24,26 @@ function openNav() {
     window.addEventListener('resize', function() {  // Close mobile section automatically if
         if(window.innerWidth >= 998) {              // window is resized above 998px
             closeNav();
-        }
-    })
-}
+        };
+    });
+};
      
- hamburgerBtn.addEventListener('click', openNav);
+hamburgerBtn.addEventListener('click', openNav);
 
 
- // Reposition hero_section bg image to keep centered around bowl on screens<640px width
+// Reposition hero_section bg image to keep centered around bowl on screens<640px width //
 
- function repositionBackground() {
-     const bgImage = document.querySelector('.heroSection');
+function repositionBackground() {
+    const bgImage = document.querySelector('.heroSection');
  
-     if(window.innerWidth <= 640) {
-         bgImage.style.backgroundPositionX = (window.innerWidth - 640)/2 + 'px';
-     }  
- }
+    if(window.innerWidth <= 640) {
+        bgImage.style.backgroundPositionX = (window.innerWidth - 640)/2 + 'px';
+    };  
+};
  
-  window.addEventListener('resize', repositionBackground);
+window.addEventListener('resize', repositionBackground);
 
-
- //DROPDOWN MENU
+// DROPDOWN MENU //
 
 //Background style
 var background = document.querySelector('#dropDownSection');
@@ -65,13 +62,12 @@ text.style.padding = "1%";
 text.style.color = "#451400";
 text.style.fontWeight = "#bold";
 
-
 //Border bottom line
 var select = document.querySelector('select');
 select.style.borderBottom = "3px solid #451400";
 
+// GUACAMOLE SLIDESHOW //
 
-// GUACAMOLE SLIDESHOW
 let slideIndex = 0;
 
 function slideText(e) {
@@ -85,11 +81,11 @@ function slideText(e) {
             spans[i].style.color = '#ad2118';
             spans[i].style.textDecoration = 'underline';
             setTimeout(function(){
-                    slides[i].classList.add('slide_fade-out');    
-                }, 2300)
-        }   
-    }
-}
+                    slides[i].classList.add('slide_fade-out');   
+            }, 2300);
+        };   
+    };
+};
 
 function slideChange(n) {
     const slides = document.querySelectorAll('.slides');
@@ -101,12 +97,12 @@ function slideChange(n) {
         slide.style.display = 'none';
         slide.addEventListener('animationend', slideText);
         slide.classList.remove('slide_fade-out');
-    })
+    });
     
     spans.forEach(span => {     // reset color and text-decoration
         span.style.color = '#451400';
         span.style.textDecoration = '';
-    })
+    });
     
     slides[n].style.display = 'block';
 
@@ -115,7 +111,7 @@ function slideChange(n) {
     setTimeout(function() {
         slideChange(n);
     }, 5100);
-}
+};
 
 // Start slide animation when scrolled into view
 
@@ -130,13 +126,11 @@ function checkPosition() {
         slideChange(0);
         window.removeEventListener('scroll', checkPosition);
         window.removeEventListener('resize', checkPosition);
-    }
-}       
+    };
+};      
 
 window.addEventListener('scroll', checkPosition);
 window.addEventListener('resize', checkPosition);
-
-
 
 //FIND A CHIPOTLE SECTION
 
