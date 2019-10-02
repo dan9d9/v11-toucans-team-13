@@ -902,7 +902,13 @@ header {
     background-color:#786259;
 }
 
+.bgColor form {
+    width: 50%;
+    margin-left: 5em;
+}
+
 input{
+    width: 50%;
     background:transparent;
     border:none;
     font-size:1.5vw;
@@ -910,17 +916,17 @@ input{
 } 
 
 .map{
-    max-width:10%;
-    height:auto
+    max-width:5%;
+    height:auto;
+    margin-left: 10em;
 }
 
 .flexContainer{
+    width: 100%;
     padding:1%;
-    margin-left:15%;
     display:inline-flex;
     flex-direction:row;
     flex-wrap:wrap;
-    justify-content:space-around;
     align-items:center;
 }  
 
@@ -928,7 +934,8 @@ input{
     font-size:1.7vw;
     color:#FFFFFF;
     font-weight:bold;
-    word-spacing:.5rem;
+    letter-spacing: 2px;
+    word-spacing:.2rem;
     padding-right:5px;
 }
 
@@ -940,6 +947,11 @@ input{
 }
 
 @media screen and (max-width:767px){
+    .bgColor form {
+        margin-left: 2em;
+        width: 90%;
+    }
+
     .map{
       display:none;
     }
@@ -947,15 +959,20 @@ input{
     .labelTitle{
         font-size:3vw;
     }
+
+    input {
+        font-size: 2.5vw;
+    }
 }
 
 @media screen and (max-width:500px){
     .labelTitle{
-        font-size:6vw;
+        font-size:5vw;
     }
 
     input{
-        font-size:6vw;
+        width: 90%;
+        font-size:5vw;
     }
 
     .flexContainer{
