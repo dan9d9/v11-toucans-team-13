@@ -73,7 +73,7 @@ function textRotator(n){
          
     if(n >= options.length) {n = 0;};
     
-    options.forEach(option=> {   // reset images display, add event listener, remove exit animation
+    options.forEach(option=> {
         option.removeAttribute("selected");     
     });
        
@@ -106,7 +106,7 @@ function showFoodMenu(e) {
     VEGAN = document.querySelectorAll('.vegan'),
     PALEO = document.querySelectorAll('.paleo'),
     PROTEIN = document.querySelectorAll('.protein'),
-    TITLE_SPAN = document.querySelector('.food_rec_title');
+    TITLE = document.querySelector('.food_rec_title');
 
     FOOD.forEach(item => item.style.display = 'none');
 
@@ -114,47 +114,47 @@ function showFoodMenu(e) {
 
     switch(this.value){
         case 'AVOIDING DAIRY':
-            TITLE_SPAN.innerHTML = 'DAIRY FREE PRODUCTS';
+            TITLE.innerHTML = 'DAIRY FREE PRODUCTS';
             DAIRY.forEach(food => food.style.display = 'block');
             break;
         case 'AVOIDING FAT':
-            TITLE_SPAN.innerHTML = 'AVOIDING FAT ITEMS',
+            TITLE.innerHTML = 'AVOIDING FAT ITEMS',
             FAT.forEach(food => food.style.display = 'block');
             break;
         case 'COUNTING CALORIES':
-            TITLE_SPAN.innerHTML = 'COUNTING CALORIES ITEMS',
+            TITLE.innerHTML = 'COUNTING CALORIES ITEMS',
             CALORIES.forEach(food => food.style.display = 'block');
             break;
         case 'AVOIDING CARBS':
-            TITLE_SPAN.innerHTML = 'AVOIDING CARBS ITEMS',
+            TITLE.innerHTML = 'AVOIDING CARBS ITEMS',
             CARBS.forEach(food => food.style.display = 'block');
             break;
         case 'GLUTEN FREE':
-            TITLE_SPAN.innerHTML = 'GLUTEN FREE ITEMS',
+            TITLE.innerHTML = 'GLUTEN FREE ITEMS',
             GLUTEN.forEach(food => food.style.display = 'block');
             break;
         case 'AVOIDING SODIUM':
-            TITLE_SPAN.innerHTML = 'AVOIDING SODIUM ITEMS',
+            TITLE.innerHTML = 'AVOIDING SODIUM ITEMS',
             SODIUM.forEach(food => food.style.display = 'block');
             break;
         case 'VEGETARIAN':
-            TITLE_SPAN.innerHTML = 'VEGETARIAN ITEMS',
+            TITLE.innerHTML = 'VEGETARIAN ITEMS',
             VEG.forEach(food => food.style.display = 'block');
             break;
         case 'AVOIDING SUGAR':
-            TITLE_SPAN.innerHTML = 'AVOIDING SUGAR ITEMS',
+            TITLE.innerHTML = 'AVOIDING SUGAR ITEMS',
             SUGAR.forEach(food => food.style.display = 'block');
             break;
         case 'VEGAN':
-            TITLE_SPAN.innerHTML = 'VEGAN ITEMS',
+            TITLE.innerHTML = 'VEGAN ITEMS',
             VEGAN.forEach(food => food.style.display = 'block');
             break;
         case 'PALEO':
-            TITLE_SPAN.innerHTML = 'PALEO ITEMS',
+            TITLE.innerHTML = 'PALEO ITEMS',
             PALEO.forEach(food => food.style.display = 'block');
             break;
         case 'ADDING PROTEIN':
-            TITLE_SPAN.innerHTML = 'ADDING PROTEIN ITEMS',
+            TITLE.innerHTML = 'ADDING PROTEIN ITEMS',
             PROTEIN.forEach(food => food.style.display = 'block');
             break;
     }
