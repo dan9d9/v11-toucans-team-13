@@ -490,6 +490,70 @@ header {
 }
 
 /*****END DROPDOWN SECTION*****/
+/*****START FOOD RECOMMENDATIONS*****/
+#food_rec {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    padding: 1em;
+    text-align: center;
+}
+
+.food_rec_title {
+    position: relative;
+    text-align: center;
+    padding: 1em;
+}
+
+.food_rec_title::after {    /*Horizontal line effect*/
+    position: absolute;
+    content: "";
+    left: 0; top: 0; right: 0; bottom: 0;
+    margin: 0 auto;
+    height: 50%;
+    width: 90%;
+    border-bottom: solid 1px #451400;
+    z-index: -1;
+}
+
+.js-food_rec-span { /*JS modified dropdown menu selection*/
+    color: #451400;
+    background: white;
+    padding: 0.5em;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Open Sans', "IBM Plex Sans", Arial, sans-serif;
+    z-index: 1;
+}
+
+.food_rec_grid div {
+    max-width: 175px;
+}
+
+.food_rec_grid img {
+    max-width: 100%;   
+}
+
+.food_rec_grid-name {
+    text-align: center;
+    color: #451400;
+    font-family: 'Open Sans', "IBM Plex Sans", Arial, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.food_rec_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-row-gap: 2em;
+    justify-items: center;
+    padding: 1em;
+}
+
+
+/***END FOOD RECOMMENDATIONS***/
 /***CARD SECTION ONE large screen***/
 
 .gridCardContainer{
