@@ -505,7 +505,7 @@ header {
     padding: 1em;
     color: #451400;
     font-weight: 800;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-family: 'Open Sans', "IBM Plex Sans", Arial, sans-serif;
     border-bottom: solid 1px #451400;
@@ -527,6 +527,7 @@ header {
     font-weight: 800;
     text-transform: uppercase;
     line-height: 1.1;
+    word-break: keep-all;
 }
 
 .food_rec_grid {
@@ -535,15 +536,15 @@ header {
     grid-row-gap: 2em;
     justify-items: center;
     padding: 1em;
+    margin-bottom: 2em;
 }
 
-/*FOOD REC MEDIA QUERIES*/
-@media screen and (min-width: 470) {
-    .food_rec_title {
-        font-size: 1.5rem;
-    }
+.food_rec_border-bottom {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: solid 1px #451400;
+    margin-bottom: 2em;
 }
-
 
 /***END FOOD RECOMMENDATIONS***/
 /***CARD SECTION ONE large screen***/
