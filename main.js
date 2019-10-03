@@ -81,7 +81,7 @@ function textRotator(n){
     });
     
     
-    option[n].setAttribute("selected", "selected");
+    options[n].setAttribute("selected", "selected");
 
     n++;
 
