@@ -66,6 +66,28 @@ text.style.fontWeight = "#bold";
 var select = document.querySelector('select');
 select.style.borderBottom = "3px solid #451400";
 
+//Animation select names (rotation)
+
+function textRotator(n){
+    const options = document.querySelectorAll('option');
+         
+    if(n >= options.length) {n = 0;};
+    
+    options.forEach(option=> {   // reset images display, add event listener, remove exit animation
+        option.removeAttribute("selected");     
+    });
+       
+    options[n].setAttribute("selected", "selected");
+
+    n++;
+
+    setTimeout(function() {
+        textRotator(n);
+    }, 3100);
+};
+
+textRotator(0);
+
 // DROPDOWN FOOD RECOMMENDATIONS SECTION //
 
 const OPTIONS = document.querySelectorAll('.dropdown_options  option')
