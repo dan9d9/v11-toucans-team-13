@@ -87,7 +87,7 @@ function textRotator(n){
 
     setTimeout(function() {
         textRotator(n);
-    }, 5100);
+    }, 4100);
 };
 
 textRotator(0);
