@@ -68,7 +68,7 @@ select.style.borderBottom = "3px solid #451400";
 
 //Animation select names (rotation)
 
-function textRotator(n) {
+function textRotator(n){
     const options = document.querySelectorAll('option');
      
     
