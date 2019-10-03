@@ -90,7 +90,7 @@ function textRotator(n) {
     }, 5100);
 };
 
-textRotator(n);
+textRotator();
 
 
 
