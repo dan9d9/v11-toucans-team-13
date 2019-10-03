@@ -75,7 +75,7 @@ function textRotator(n) {
     if(n >= options.length) {n = 0;};
     
     options.forEach(option=> {   // reset images display, add event listener, remove exit animation
-        option.removeAttribute(selected);
+        option.removeAttribute("selected");
 
      
     });
