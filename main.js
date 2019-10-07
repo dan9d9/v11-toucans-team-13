@@ -90,7 +90,7 @@ textRotator(0);
 
 // DROPDOWN FOOD RECOMMENDATIONS SECTION //
 
-const OPTIONS = document.querySelectorAll('.dropdown_options  option')
+const OPTIONS = document.querySelector('.dropdown_select')
 
 function showFoodMenu(e) {
     const FOOD_REC = document.getElementById('food_rec'),
@@ -112,7 +112,7 @@ function showFoodMenu(e) {
 
     FOOD_REC.style.display = 'flex';
 
-    switch(this.value){
+    switch(e.target.value){
         case 'AVOIDING DAIRY':
             TITLE.innerHTML = 'DAIRY FREE PRODUCTS';
             DAIRY.forEach(food => food.style.display = 'block');
@@ -160,7 +160,7 @@ function showFoodMenu(e) {
     }
 }
 
-OPTIONS.forEach(option => option.addEventListener('click', showFoodMenu));
+OPTIONS.addEventListener('change', showFoodMenu);
 
 // GUACAMOLE SLIDESHOW //
 
