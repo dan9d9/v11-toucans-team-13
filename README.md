@@ -1,7 +1,14 @@
 # Chingu Voyage 11 Project
 
 This project was created for Chingu Voyage 11. It is a clone of the [Chipotle](https://chipotle.com/) website using HTML, CSS and JS.
+
+Team members: [dan9d9](https://github.com/dan9d9) | [MinervaLong](https://github.com/MinervaLong)
+
 #### You can see our live link [HERE](https://chingu-voyages.github.io/v11-toucans-team-13/)
+
+
+![Chipotle clone gift preview](https://media.giphy.com/media/SuC9yFsGZk1n8tZlcb/giphy.gif)
+
 
 ## Key features
 * Responsive Design
@@ -9,6 +16,7 @@ This project was created for Chingu Voyage 11. It is a clone of the [Chipotle](h
 * Image Slideshow
 * Hamburger Menu
 * Grid/Flexbox
+* Modernizr JavaScript Library
 
 <br>
 
