@@ -490,6 +490,63 @@ header {
 }
 
 /*****END DROPDOWN SECTION*****/
+/*****START FOOD RECOMMENDATIONS SECTION*****/
+#food_rec {         
+    display: none;      /* JS modified */
+    flex-flow: column nowrap;
+    align-content: center;
+    padding: 1em;
+}
+
+.food_rec_title {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 1em;
+    color: #451400;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Open Sans', "IBM Plex Sans", Arial, sans-serif;
+    border-bottom: solid 1px #451400;
+}
+
+.js-food-item {     
+    max-width: 175px;
+    display: none;      /*JS modified*/
+}
+
+.food_rec_grid img {
+    max-width: 100%;   
+}
+
+.food_rec_grid-name {
+    text-align: center;
+    color: #451400;
+    font-family: 'Open Sans', "IBM Plex Sans", Arial, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.1;
+    word-break: keep-all;
+}
+
+.food_rec_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-row-gap: 2em;
+    justify-items: center;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.food_rec_border-bottom {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: solid 1px #451400;
+    margin-bottom: 2em;
+}
+
+/***END FOOD RECOMMENDATIONS***/
 /***CARD SECTION ONE large screen***/
 
 .gridCardContainer{

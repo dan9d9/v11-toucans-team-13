@@ -70,17 +70,13 @@ select.style.borderBottom = "3px solid #451400";
 
 function textRotator(n){
     const options = document.querySelectorAll('option');
-     
-    
+         
     if(n >= options.length) {n = 0;};
     
-    options.forEach(option=> {   // reset images display, add event listener, remove exit animation
-        option.removeAttribute("selected");
-
-     
+    options.forEach(option=> {
+        option.removeAttribute("selected");     
     });
-    
-    
+       
     options[n].setAttribute("selected", "selected");
 
     n++;
@@ -92,10 +88,79 @@ function textRotator(n){
 
 textRotator(0);
 
+// DROPDOWN FOOD RECOMMENDATIONS SECTION //
 
+const OPTIONS = document.querySelector('.dropdown_select')
 
+function showFoodMenu(e) {
+    const FOOD_REC = document.getElementById('food_rec'),
+    FOOD = document.querySelectorAll('.js-food-item'),
+    DAIRY = document.querySelectorAll('.dairy'),
+    FAT = document.querySelectorAll('.fat'),
+    CALORIES = document.querySelectorAll('.calories'),
+    CARBS = document.querySelectorAll('.carbs'),
+    GLUTEN = document.querySelectorAll('.gluten'),
+    SODIUM = document.querySelectorAll('.sodium'),
+    VEG = document.querySelectorAll('.veg'),
+    SUGAR = document.querySelectorAll('.sugar'),
+    VEGAN = document.querySelectorAll('.vegan'),
+    PALEO = document.querySelectorAll('.paleo'),
+    PROTEIN = document.querySelectorAll('.protein'),
+    TITLE = document.querySelector('.food_rec_title');
 
+    FOOD.forEach(item => item.style.display = 'none');
 
+    FOOD_REC.style.display = 'flex';
+
+    switch(e.target.value){
+        case 'AVOIDING DAIRY':
+            TITLE.innerHTML = 'DAIRY FREE PRODUCTS';
+            DAIRY.forEach(food => food.style.display = 'block');
+            break;
+        case 'AVOIDING FAT':
+            TITLE.innerHTML = 'AVOIDING FAT ITEMS',
+            FAT.forEach(food => food.style.display = 'block');
+            break;
+        case 'COUNTING CALORIES':
+            TITLE.innerHTML = 'COUNTING CALORIES ITEMS',
+            CALORIES.forEach(food => food.style.display = 'block');
+            break;
+        case 'AVOIDING CARBS':
+            TITLE.innerHTML = 'AVOIDING CARBS ITEMS',
+            CARBS.forEach(food => food.style.display = 'block');
+            break;
+        case 'GLUTEN FREE':
+            TITLE.innerHTML = 'GLUTEN FREE ITEMS',
+            GLUTEN.forEach(food => food.style.display = 'block');
+            break;
+        case 'AVOIDING SODIUM':
+            TITLE.innerHTML = 'AVOIDING SODIUM ITEMS',
+            SODIUM.forEach(food => food.style.display = 'block');
+            break;
+        case 'VEGETARIAN':
+            TITLE.innerHTML = 'VEGETARIAN ITEMS',
+            VEG.forEach(food => food.style.display = 'block');
+            break;
+        case 'AVOIDING SUGAR':
+            TITLE.innerHTML = 'AVOIDING SUGAR ITEMS',
+            SUGAR.forEach(food => food.style.display = 'block');
+            break;
+        case 'VEGAN':
+            TITLE.innerHTML = 'VEGAN ITEMS',
+            VEGAN.forEach(food => food.style.display = 'block');
+            break;
+        case 'PALEO':
+            TITLE.innerHTML = 'PALEO ITEMS',
+            PALEO.forEach(food => food.style.display = 'block');
+            break;
+        case 'ADDING PROTEIN':
+            TITLE.innerHTML = 'ADDING PROTEIN ITEMS',
+            PROTEIN.forEach(food => food.style.display = 'block');
+            break;
+    }
+}
+
+OPTIONS.addEventListener('change', showFoodMenu);
 
 // GUACAMOLE SLIDESHOW //
 
