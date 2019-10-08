@@ -257,7 +257,7 @@ header {
     justify-content: space-around;
     align-items: center;
     height: 100vh;
-    background-image: url(./Chipotle-Clone-Images/chip_showcase.jpg);
+    background-image: url(./Chipotle-Clone-Images/chip_showcase-min.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -868,11 +868,11 @@ header {
 }
 
 .gridCard_img--gifts {
-    background-image: url(./Chipotle-Clone-Images/chip_giftandgear.jpg);
+    background-image: url(./Chipotle-Clone-Images/chip_giftandgear-min.jpg);
 }
 
 .gridCard_img--fundraising {
-    background-image: url(./Chipotle-Clone-Images/fundraising.jpg);
+    background-image: url(./Chipotle-Clone-Images/fundraising-min.jpg);
 }
 
 .gridCard_img h2 {
