@@ -418,7 +418,10 @@ header {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items:center; 
-    align-content: center; 
+    align-content: center;
+    background-image: url('./Chipotle-Clone-Images/bg-text-min.png');
+    background-size: cover;
+    height: 200px; 
 }
 
 .bgText{
@@ -427,20 +430,25 @@ header {
     justify-content: space-around;
     align-items:center; 
     align-content: center; 
+    width: 100%;
 }
 
 .dropText{
     font-size:2em;
+    background-color: #F7F2ED;
+    padding: 1%;
+    color: #451400;
+    font-weight:  bold;
 }
 
 .dropText select{
     background-color: transparent;
     color:#B68207;
-    border:none;
     font-size:1em;
     appearance:none;
     outline: none;
     cursor: pointer;
+    border-bottom:  3px solid #451400;
 }
 
 /***DROPDOWNSECTION medium screen***/
